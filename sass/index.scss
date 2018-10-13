@@ -32,6 +32,12 @@ img:hover{opacity: .8;}
                 text-decoration: none;
                 text-align: center;
             }
+            .shopping:hover{
+                 .icon_arrow_down{
+                    transform: rotate(180deg);
+                    transform-origin: 50% 50%;
+                 }
+            }
         }
         .home_page{
             padding: 0 40px;
@@ -210,4 +216,12 @@ img:hover{opacity: .8;}
             }
         }
     }
+}
+.floor_item_title{
+    width: 100%;
+    height: 28px;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 20px 0;
+    background: url(../images/title1.jpg) center top no-repeat;
 }

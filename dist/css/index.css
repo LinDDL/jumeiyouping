@@ -34,6 +34,9 @@ img:hover {
         font-size: 14px;
         text-decoration: none;
         text-align: center; }
+      .hdBottom .nav li .shopping:hover .icon_arrow_down {
+        transform: rotate(180deg);
+        transform-origin: 50% 50%; }
     .hdBottom .nav .home_page {
       padding: 0 40px;
       background: #ed145b; }
@@ -182,3 +185,11 @@ img:hover {
         .today_tab .tab_box .goods_top .goods_top_list a img {
           width: 535px;
           height: 212px; }
+
+.floor_item_title {
+  width: 100%;
+  height: 28px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 20px 0;
+  background: url(../images/title1.jpg) center top no-repeat; }

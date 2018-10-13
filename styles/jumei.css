@@ -371,7 +371,7 @@
 .car_link:hover .text{
     background: #fff;
 }
-.car_link:hover .icon_arrow_down{
+.car_link:hover .icon_arrow_down,{
     transform: rotate(180deg);
     transform-origin: 50% 50%;
 }
@@ -443,4 +443,8 @@
 }
 .icon_wrap .td{
     background: url(http://a1.jmstatic.com/79ab7f2d9d35ac68/z03.jpg) no-repeat;
+}
+.shopping:hover .icon_arrow_down{
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
 }
