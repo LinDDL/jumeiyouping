@@ -726,3 +726,212 @@ em,i{font-style: normal;}
         background: url(../images/timeion.png) no-repeat 5px center;
     }
 }
+.footer{
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    background: #fff;
+    position: relative;
+    bottom: -1px;
+    height: 738px;
+    .footer_icon{
+        padding: 30px 0 15px 0;
+        border-bottom: 1px solid #ccc;
+        width: 1090px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .ft_link{
+        width: 155px;
+        height: 140px;
+        color: #999;
+        font-size: 14px;
+        display: block;
+        float: left;
+        line-height: 18px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .icon{
+        width: 63px;
+        height: 63px;
+        display: block;
+        overflow: hidden;
+        margin: 0 auto 20px;
+        cursor: pointer;
+        background: url(../images/footer_new.png) no-repeat;
+    }
+    .shang{
+        background-position: 0 0;
+    }
+    .con{
+        color: #333;
+        font-size: 16px;
+        height: 24px;
+        line-height: 24px;
+        overflow: hidden;
+        display: block;
+        cursor: pointer;
+    }
+    
+}
+.mei .icon{
+    background-position: -64px 0;
+}
+.ma .icon{
+    background-position: -128px 0;
+}
+.tui .icon{
+    background-position: -190px 0;
+}
+.bei .icon{
+    background-position: -253px 0;
+}
+.huo .icon{
+    background-position: -316px 0;
+}
+.jian .icon{
+    background-position: -379px 0;
+}
+.footer_list{
+    height: 165px;
+    padding-top: 30px;
+    ul{
+        width: 156px;
+        height: 143px;
+        padding-left: 16px;
+        float: left;
+        zoom: 1;
+        overflow: hidden;
+        li {
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    .foot_linksa{
+        width: 160px;
+    }
+    .foot_linkse{
+        width: 118px;
+    }
+    .foot_links{
+        color: #666;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    a{
+        height: 22px;
+        line-height: 22px;
+        color: #666;
+        display: block;
+        @include transition(transform .4s linear);    
+
+    }
+    a:hover{
+        color: #ea1d5d;
+        text-decoration: none;
+        @include transform(translateX(10px));
+    }
+}
+.footer_top_left{
+    border-left: 1px solid #fff;
+    display: inline-block;
+    margin-left: 16px;
+    .foot_linksf,.foot_linksg{
+        width: 83px;
+        text-align: center;
+        padding-left: 36px;
+        margin-top: 0;
+        height: 146px;
+        color: #666;
+    }
+    .shouji,.weixin{
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+.ft_pic1,.ft_pic2{
+    width: 78px;
+    height: 78px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 3px;
+    background: url(../images/header_corn_new_v2.png) no-repeat;
+}
+.ft_pic1{
+    background-position: 0 -423px;
+}
+.ft_pic2{
+    background-position: -80px -423px;
+}
+.footer_by{
+    height: 95px;
+    background: url(../images/footer_dy.jpg) center top no-repeat;
+    .wodaiyan{
+        width: 360px;
+        height: 95px;
+        margin: 0 auto;
+        .daiyan{
+            display: block;
+            height: 95px;
+            background: url(../images/footer_play.png) center center no-repeat;
+        }
+    }
+}
+.footer_center{
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #fff;
+    background: url(../images/footer_btm02_bg.jpg) center top repeat-x;
+    a{
+        color: #fff;
+        padding-right: 12px;
+        height: 48px;
+        display: inline-block;
+    }
+}
+.footer_con{
+    line-height: 20px;
+    padding-bottom: 80px;
+    color: #ccc;
+    background: url(../images/newindex_footer_bg.png) center top repeat-x;
+    .footer_copy_con {
+        padding: 14px 0 18px;
+        line-height: 23px;
+        a{
+            color: #ccc;
+        }
+    }
+    .footer_copy_logo {
+        width: 126px;
+        height: 50px;
+        overflow: hidden;
+        display: inline-block;
+        margin-right: 8px;
+        background: url(../images/footer_btm_icon.png) no-repeat;
+    }
+    .logo01,.logo03,.logo04 {
+        cursor: default;
+    }
+    .logo02{
+        background-position: -126px 0;
+    }
+    .logo03 {
+        background-position: -252px 0;
+    }
+    .logo04 {
+        background-position: -378px 0;
+    }
+    .logo05 {
+        background-position: -504px 0;
+    }
+    .logo06{
+        width: 55px;
+        height: 50px;
+        background: url(../images/bz.jpg) no-repeat;
+    }
+} 
