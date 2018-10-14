@@ -4,6 +4,9 @@ html {
 img:hover {
   opacity: .8; }
 
+em, i {
+  font-style: normal; }
+
 .headerBottom {
   width: 100%;
   height: 38px;
@@ -339,3 +342,298 @@ img:hover {
 
 .today_top_3 {
   background-position: 0 -72px; }
+
+.floor_deal_title {
+  height: 25px;
+  background: url(../images/main.png) #f7f7f7 no-repeat;
+  width: 1090px;
+  position: relative;
+  margin-top: 20px;
+  border-bottom: 2px solid #000; }
+
+.today_new_deal .floor_deal_title {
+  background-position: 0 -203px; }
+
+.today_new_deal .today_deal_title {
+  border-bottom: 2px solid #000;
+  position: relative; }
+  .today_new_deal .today_deal_title .today_deal_tips {
+    position: absolute;
+    bottom: 6px;
+    right: 10px;
+    padding-left: 20px;
+    color: #ed135d;
+    background: url(../images/clock.jpg) left 4px no-repeat; }
+    .today_new_deal .today_deal_title .today_deal_tips .deal_box {
+      float: left;
+      display: inline;
+      background: #fff;
+      margin-right: 20px;
+      width: 330px;
+      box-shadow: 2px 2px 4px #e3e3e3;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 450px;
+      position: relative; }
+      .today_new_deal .today_deal_title .today_deal_tips .deal_box .img_box_href {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        background: url(../images/loading.gif) no-repeat 150px center; }
+      .today_new_deal .today_deal_title .today_deal_tips .deal_box img {
+        display: block; }
+
+.today_new_deal .deal_list {
+  width: 1110px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: -20px; }
+
+.deal_tags {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.teg_list {
+  width: 40px;
+  height: 40px;
+  float: left;
+  overflow: hidden;
+  text-indent: -99em;
+  display: inline-block;
+  z-index: 1;
+  background: url(../images/home_all_icon.png) no-repeat; }
+
+.fangwei {
+  background-position: -82px 0; }
+
+.commit_new {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: 30px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#BF000000', EndColorStr='#BF000000'); }
+  .commit_new .commit_new_box {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #fff; }
+  .commit_new .link {
+    float: right;
+    font-weight: 400; }
+  .commit_new .service_rating {
+    float: left;
+    display: inline; }
+    .commit_new .service_rating .rating_num {
+      float: left;
+      line-height: 30px; }
+
+.all_cart_wrap a:hover {
+  color: #fff; }
+
+.commit_new .rating, .commit_new .rating .value {
+  height: 15px;
+  background: url(../images/rating_small.png) repeat-x;
+  overflow: hidden; }
+
+.commit_new .rating {
+  background-position: 0 -39px;
+  margin: 7px 0 0 5px;
+  float: left;
+  width: 80px; }
+
+.commit_new .rating .value {
+  background-position: 0 -54px; }
+
+.deal_box {
+  float: left;
+  display: inline;
+  background: #fff;
+  margin-right: 20px;
+  width: 330px;
+  box-shadow: 2px 2px 4px #e3e3e3;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 450px;
+  position: relative; }
+  .deal_box .img_box, .deal_box .img_box_href {
+    display: block;
+    width: 330px;
+    height: 345px;
+    overflow: hidden; }
+    .deal_box .img_box img, .deal_box .img_box_href img {
+      width: 350px;
+      height: 350px; }
+
+.deal_detail {
+  margin-top: 10px; }
+  .deal_detail .title {
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    height: 48px;
+    font-weight: 400;
+    overflow: hidden; }
+  .deal_detail .pink {
+    color: #ed145b;
+    font-weight: 700; }
+  .deal_detail .in_box {
+    margin-top: 8px;
+    height: 48px; }
+    .deal_detail .in_box .price_box {
+      float: left;
+      height: 45px;
+      line-height: 45px; }
+    .deal_detail .in_box .timer_box {
+      width: 210px;
+      float: right;
+      line-height: 45px;
+      overflow: hidden;
+      height: 45px; }
+
+.price_box .pnum, .price_box em {
+  font-size: 22px;
+  color: #ed145b;
+  font-family: Arial,Helvetica,sans-serif;
+  float: left;
+  display: inline; }
+
+.price_box .mnum {
+  text-decoration: line-through;
+  color: #929292;
+  padding-left: 5px;
+  float: left;
+  font-family: Arial;
+  margin-top: 3px;
+  display: inline;
+  font-size: 12px; }
+
+.price_box em {
+  font-size: 18px; }
+
+.timer_box {
+  width: 210px;
+  float: right;
+  line-height: 45px;
+  overflow: hidden;
+  height: 45px; }
+  .timer_box .num_box, .timer_box .time_box {
+    float: right;
+    margin-right: 4px;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: 400;
+    color: #939292; }
+  .timer_box .num_box {
+    font-size: 12px; }
+    .timer_box .num_box .buy_num {
+      color: #b9966a;
+      font-family: arial;
+      font-size: 14px;
+      font-weight: 400; }
+  .timer_box .time_box {
+    color: #333;
+    font-size: 12px; }
+    .timer_box .time_box em {
+      color: #999;
+      padding: 0 2px; }
+
+.add_cart_box {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+.add_cart, .deal_tips, .cate_look {
+  display: block;
+  width: 79px;
+  height: 26px;
+  color: #fff;
+  background: #ed155b;
+  line-height: 26px;
+  text-align: center; }
+
+.floor_head {
+  background: url(../images/main.png) #f7f7f7 no-repeat;
+  height: 26px;
+  width: 1090px;
+  position: relative;
+  margin: 20px 0;
+  border-bottom: 2px solid #000;
+  background-position: 0 0; }
+
+.floor-view-more {
+  position: absolute;
+  right: 0;
+  display: block;
+  background: url(../images/moreicon.png) no-repeat left center;
+  color: #333;
+  width: 92px;
+  text-align: right;
+  top: 8px;
+  font-family: '\5B8B\4F53';
+  font-size: 12px;
+  height: 14px;
+  line-height: 14px;
+  right: 13px; }
+
+.sc_content {
+  height: 440px; }
+  .sc_content .sc1 {
+    padding: 10px;
+    width: 258px;
+    height: 420px;
+    background: #fff;
+    float: left; }
+  .sc_content .sc2 {
+    width: 780px;
+    height: 440px;
+    background: #fff;
+    padding-left: 10px;
+    float: right; }
+
+.ul_content a {
+  display: block;
+  position: relative;
+  width: 380px;
+  height: 205px;
+  color: #333; }
+
+.ul_content li {
+  padding: 10px 10px 0 0;
+  width: 380px;
+  height: 205px;
+  float: left;
+  display: inline;
+  position: relative; }
+
+.sc-item-info {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  text-align: center;
+  width: 150px; }
+  .sc-item-info .tit {
+    width: 150px;
+    font-size: 14px;
+    font-weight: 700;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap; }
+  .sc-item-info .stit {
+    margin-top: 5px;
+    max-height: 40px;
+    overflow: hidden;
+    line-height: 20px; }
+  .sc-item-info .sale {
+    margin-top: 18px;
+    line-height: 1px; }
+    .sc-item-info .sale em {
+      color: #ed145b;
+      font-size: 16px; }
+  .sc-item-info .time_left {
+    margin-top: 15px;
+    background: url(../images/timeion.png) no-repeat 5px center; }

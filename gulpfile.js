@@ -50,8 +50,7 @@ gulp.task("default",["watch","connect"]);
 
 gulp.task("script", ()=>{
     return gulp.src(["script/*.js","!script/swiper.js","!script/tab_box.js"])
-    .pipe(concat("mian.js"))
-    .pipe(babel())
+    .pipe(concat("main.js"))
     .pipe(uglify())
     .pipe(gulp.dest("dist/script"));
 })

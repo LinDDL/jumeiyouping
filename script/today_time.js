@@ -26,6 +26,12 @@ $(function(){
         }
         
        $('.today_time').html(d+":"+h+":"+m+":"+s);
+       $('#time_box').html("<em>"+d+"</em>天<em>"+h+"</em>时<em>"+m+"</em>分<em>"+s+"</em>秒");
+       $('#home_timer').html("<em>"+d+"</em>天<em>"+h+"</em>时<em>"+m+"</em>分<em>"+s+"</em>秒");
+       $('#home_timer1').html("<em>"+d+"</em>天<em>"+h+"</em>时<em>"+m+"</em>分<em>"+s+"</em>秒");
+       $('#home_timer2').html("<em>"+d+"</em>天<em>"+h+"</em>时<em>"+m+"</em>分<em>"+s+"</em>秒");
+       $('#home_timer3').html("<em>"+d+"</em>天<em>"+h+"</em>时<em>"+m+"</em>分<em>"+s+"</em>秒");
+        
     }
     setInterval(foo,1000);    
 })
