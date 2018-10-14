@@ -19,7 +19,7 @@ var sass = require("gulp-sass-china");
 
 gulp.task('connect', function() {
     connect.server({
-        port:8888,
+        port:8001,
         root:"dist/",
         livereload:true,
         // 中间件;
@@ -49,7 +49,7 @@ gulp.task("default",["watch","connect"]);
 // script 转存指令;
 
 gulp.task("script", ()=>{
-    return gulp.src(["script/*.js"])
+    return gulp.src(["script/*.js","!script/swiper.js"])
     .pipe(concat("mian.js"))
     .pipe(uglify())
     .pipe(gulp.dest("dist/script"));

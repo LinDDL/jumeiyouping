@@ -193,3 +193,140 @@ img:hover {
   overflow: hidden;
   margin: 20px 0;
   background: url(../images/title1.jpg) center top no-repeat; }
+
+.today_tab_content {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative; }
+  .today_tab_content .today_tab_link {
+    display: block;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    position: relative; }
+    .today_tab_content .today_tab_link img {
+      position: relative;
+      margin-left: -185px;
+      width: 1275px;
+      height: 340px; }
+  .today_tab_content .tags_list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/new_haitao_icon.jpg) no-repeat; }
+
+.today_top_1, .today_top_2, ._top_3 {
+  display: block;
+  top: 55px;
+  left: 55px;
+  position: absolute;
+  width: 120px;
+  height: 62px;
+  background: url(../images/top.png) no-repeat; }
+
+.tags_list {
+  width: 40px;
+  height: 40px;
+  float: left;
+  overflow: hidden;
+  text-indent: -99em;
+  display: inline-block;
+  z-index: 1;
+  background: url(../images/home_all_icon.png) no-repeat; }
+
+.produce_detail {
+  position: absolute;
+  height: 332px;
+  width: 382px;
+  padding: 0 40px;
+  background: #fff;
+  top: 18px;
+  right: 18px;
+  box-shadow: 0 1px 4px #c5c5c5;
+  zoom: 1;
+  line-height: 1; }
+  .produce_detail .the_time {
+    color: #fff;
+    font-weight: 400;
+    text-indent: 0;
+    font-size: 14px;
+    margin-top: -1px;
+    text-align: center; }
+    .produce_detail .the_time .end_time {
+      color: #fff;
+      font-weight: 400;
+      text-indent: 0;
+      font-size: 14px;
+      background: #333;
+      height: 26px;
+      line-height: 26px;
+      margin-top: -1px;
+      text-align: center;
+      display: inline-block;
+      min-width: 174px;
+      _width: 190px;
+      padding: 0 10px;
+      display: inline-block; }
+      .produce_detail .the_time .end_time .end_text {
+        margin-right: 3px; }
+      .produce_detail .the_time .end_time .today_time {
+        font-weight: 600; }
+  .produce_detail .product_title {
+    color: #767676;
+    line-height: 24px;
+    height: 142px;
+    display: block;
+    font-size: 16px;
+    margin-top: 36px;
+    overflow: hidden; }
+  .produce_detail .product_price {
+    margin-top: 30px;
+    font-family: arial;
+    height: 45px;
+    position: relative; }
+    .produce_detail .product_price .now_price {
+      font-size: 34px;
+      color: #000;
+      float: left; }
+      .produce_detail .product_price .now_price em {
+        font-style: normal; }
+    .produce_detail .product_price .old_price {
+      position: absolute;
+      bottom: 14px;
+      left: 100px;
+      float: left;
+      margin-left: 5px;
+      color: #727272;
+      text-decoration: line-through; }
+  .produce_detail .goto_cart_wrap {
+    height: 36px;
+    font-size: 16px;
+    float: right;
+    width: 106px; }
+  .produce_detail .goto_btn {
+    display: inline-block;
+    height: 36px;
+    width: 106px;
+    line-height: 37px;
+    color: #fff;
+    background: #e81a62;
+    text-align: center;
+    font-size: 14px; }
+  .produce_detail .tag_a {
+    display: inline-block;
+    float: left;
+    margin-right: 3px;
+    margin-left: -8px; }
+    .produce_detail .tag_a img {
+      width: 134px;
+      height: 45px; }
+  .produce_detail .tag_like {
+    padding-top: 10px;
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+    float: right; }
+    .produce_detail .tag_like em {
+      font-size: 18px;
+      color: #b9966a;
+      vertical-align: middle;
+      font-style: normal; }
