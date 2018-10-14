@@ -179,6 +179,9 @@
     display: block;
 }
 /* headerCenter */
+.headerCenter{
+    background: #fff;
+}
 .hdCenter{
     height: 110px;
     background: #fff;

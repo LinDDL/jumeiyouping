@@ -49,8 +49,9 @@ gulp.task("default",["watch","connect"]);
 // script 转存指令;
 
 gulp.task("script", ()=>{
-    return gulp.src(["script/*.js","!script/swiper.js"])
+    return gulp.src(["script/*.js","!script/swiper.js","!script/tab_box.js"])
     .pipe(concat("mian.js"))
+    .pipe(babel())
     .pipe(uglify())
     .pipe(gulp.dest("dist/script"));
 })

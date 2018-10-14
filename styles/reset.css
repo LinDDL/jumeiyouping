@@ -17,3 +17,4 @@ blockquote, body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6,
 }
 body a:hover{color: #ed155b}
 img:hover{opacity: .8;}
+body, html {background: #f7f7f7;}

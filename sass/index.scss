@@ -5,7 +5,7 @@ img:hover{opacity: .8;}
     width:100%;
     height: 38px;
     clear: both;
-    background: url(http://a1.jmstatic.com/e653901f7f30da9c/nav_new_line.jpg) #000 repeat-x;
+    background: url(../images/nav_new_line.jpg) #000 repeat-x;
 }
 .hdBottom{
     height: 38px;
@@ -250,7 +250,7 @@ img:hover{opacity: .8;}
         background: url(../images/new_haitao_icon.jpg) no-repeat;
     }
 }
-.today_top_1, .today_top_2, ._top_3 {
+.today_top_1, .today_top_2, .today_top_3 {
     display: block;
     top: 55px;
     left: 55px;
@@ -318,6 +318,10 @@ img:hover{opacity: .8;}
             font-size: 16px;
             margin-top: 36px;
             overflow: hidden;
+            em{
+                color: #ed145b;
+                font-style: normal;
+            }
         }
         .product_price{
             margin-top: 30px;
@@ -380,3 +384,9 @@ img:hover{opacity: .8;}
             }
         }
     }
+.today_top_2{
+    background-position: 0 -144px;
+}
+.today_top_3{
+    background-position: 0 -72px;
+}
