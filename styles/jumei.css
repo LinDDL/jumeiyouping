@@ -29,7 +29,9 @@
 }
 .hdLeft span ,.hdLeft a{
     margin-right: 20px;
+    color: #6c6c6c;
 }
+
 /* right list */
 .hdRight{
     position: relative;

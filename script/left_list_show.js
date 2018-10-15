@@ -1,6 +1,6 @@
 $(function(){
     $(window).on('scroll',function(){
-        console.log($("html,body").scrollTop());
+        //console.log($("html,body").scrollTop());
         if($("html,body").scrollTop()>$(".today_main").offset().top-60){
             $(".left_nav").css({
                 'visibility': 'visible',

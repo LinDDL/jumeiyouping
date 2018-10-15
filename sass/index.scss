@@ -1027,3 +1027,344 @@ em,i{font-style: normal;}
     filter: Alpha(opacity=100);
     transform: scale(1);
 }
+// /右悬浮框/ 
+.right_nav{
+    right: 0px;
+    position: fixed;
+    top: 0px;
+    display: block;
+    height: 100%;
+    width: 40px;
+    font-size: 12px;
+    z-index: 2;
+    //backface-visibility: hidden;
+    .main_panel{
+        width: 40px;
+        height: 100%;
+        position: absolute;
+        background: #444851;
+        z-index: 2;
+        top: 0;
+        left: 0px;
+        font-family: 'microsoft yahei',arial;
+    }
+}
+.panel_top{
+    position: absolute;
+    top: 50%;
+    margin-top: -220px;
+    left: 0;
+    background: #444851;
+    z-index: 3;
+    li{
+        position: relative;
+        display: block;
+        height: 38px;
+        z-index: 1;
+    }
+    a{
+        display: block;
+        line-height: 200px;
+        width: 40px;
+        height: 38px;
+        text-decoration: none;
+        color: #d8d8d8;
+        overflow: hidden;
+        background-color: #444851;
+        position: relative;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    a:hover{
+        background: #ed145b;
+    }
+    i{
+        position: absolute;
+        cursor: pointer;
+        background:url(../images/ibar_sprites.png) no-repeat;
+    }
+    .btn_login i{
+        width: 18px;
+        height: 19px;
+        top: 10px;
+        left: 11px;
+    }
+    .btn_login a:hover i{
+        background-position: -33px 0;
+    }
+    .btn_cart{
+        padding: 20px 0 10px;
+        height: 133px;
+        a{
+            line-height: 16px;
+            height: 133px;
+            background-position: -23px -225px;
+            color: #fff;
+        }
+        i{
+            width: 23px;
+            height: 18px;
+            top: 11px;
+            left: 9px;
+            background-position: 0 -29px;
+            z-index:1;
+        }
+        .cars{
+            width: 16px;
+            display: block;
+            height: 48px;
+            margin: 38px 0 0 14px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .car_count{
+            width: 23px;
+            height: 23px;
+            display: block;
+            border-radius: 50%;
+            background: #ed145b;
+            text-align: center;
+            line-height: 23px;
+            margin: 9px 0 0 10px;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+    .btn_cart a:hover i{
+        background-position: -33px -29px;
+    }
+    .btn_asset{
+        padding-bottom: 6px;
+        height: 38px;
+        i{
+            width: 18px;
+            height: 18px;
+            background-position: 0 -57px;
+            top: 10px;
+            left: 11px;
+        }
+    }
+    .btn_asset a:hover i{
+        background-position: -33px -57px;
+    }
+    .btn_favor{
+        padding-bottom: 6px;
+        i{
+            width: 18px;
+            height: 15px;
+            background-position: 0 -85px;
+            top: 11px;
+            left: 11px;
+        }
+    }
+    .btn_favor a:hover i{
+        background-position: -33px -85px;
+    }
+    .btn_history{
+        padding-bottom: 6px;
+        i{
+            width: 11px;
+            height: 24px;
+            background-position: -4px -110px;
+            top: 8px;
+            left: 14px;
+        }
+    }
+    .btn_history a:hover i{
+        background-position: -36px -110px;
+    }
+}
+.panel_bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    background: #444851;
+    z-index: 1;
+    li {
+        position: relative;
+        display: block;
+        height: 38px;
+        z-index: 1;
+    }
+    a{
+        display: block;
+        line-height: 200px;
+        width: 40px;
+        height: 38px;
+        text-decoration: none;
+        color: #d8d8d8;
+        overflow: hidden;
+        background-color: #444851;
+        position: relative;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    i{  
+        position: absolute;
+        cursor: pointer;
+        background:url(../images/ibar_sprites.png) no-repeat;
+    }
+    a:hover{
+        background: #ed145b;
+    }
+    .btn_code i{
+        width: 18px;
+        height: 18px;
+        top: 11px;
+        left: 11px;
+        background-position: 0 -302px;
+    }
+    .btn_support i{
+        width: 15px;
+        height: 16px;
+        top: 11px;
+        left: 12px;
+        background-position: 0 -175px;
+    }
+    .btn_support a:hover i{
+        background-position: -33px -175px;
+    }
+    .btn_gotop i{
+        width: 17px;
+        height: 14px;
+        top: 12px;
+        left: 12px;
+        background-position: 0 -201px;
+    }
+    .btn_gotop a:hover i{
+        background-position: -33px -201px;
+    }
+}
+.login_box{
+    width: 267px;
+    height: 185px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    border-radius: 5px 0 0 5px;
+    z-index: 3;
+    position: absolute;
+    top: 75px;
+    left: -287px;
+    display: none;
+    .actor_box{
+        width: 267px;
+        overflow: hidden;
+        p{
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+        .ac_box{
+            margin: 10px auto 10px;
+        }
+        a {
+            color: #ed145b;
+            text-decoration: none;
+        }
+    }
+    .login_btn_box{
+        width: 267px;
+        height: 79px;
+        border-top: 1px dotted #d5d5d5;
+        overflow: hidden;
+        padding-top: 15px;
+        clear: both;
+        a{
+            width: 94px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid;
+            color: #333;
+            text-decoration: none;
+            float: left;
+            background-position: 0 -408px;
+            background-repeat: repeat-x;
+            border-color: #e9e9e9;
+        }
+        .my_order{
+            margin: 0 10px 0 35px;
+        }
+        .my_hide{
+            border-color: #e9e9e9;
+        }
+    }
+   
+    .close_btn{
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        overflow: hidden;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        background:url(../images/ibar_sprites.png) no-repeat;
+        background-position: 5px -267px;
+    }
+}
+.icon_arrow_white{
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    width: 5px;
+    height: 9px;
+    background:url(../images/ibar_sprites.png) no-repeat;
+    background-position: 0 -253px;
+}
+.tool_text{
+    height: 38px;
+    line-height: 38px;
+    width: 92px;
+    position: absolute;
+    z-index: 2;
+    left: -122px;
+    opacity: 0;
+    top: 0;
+    background: #444851;
+    color: #d8d8d8;
+    text-align: center;
+    display: block;
+    visibility: hidden;
+    @include transition(all .3s);
+    .icon_arrow_right_black {
+        position: absolute;
+        right: -5px;
+        top: 15px;
+        width: 5px;
+        height: 9px;
+        background: #444851;
+        background:url(../images/ibar_sprites.png) no-repeat;
+        background-position: 0 -234px;
+        overflow: hidden;
+    }
+}
+.np_code{
+    position: absolute;
+    padding: 10px;
+    width: 148px;
+    height: 175px;
+    top: -157px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    border-radius: 5px 0 0 5px;
+    z-index: 3;
+    position: absolute;
+    left: -168px;
+    display: none;
+    img{
+        width:148px;
+        height:175px;
+    }
+    .icon_arrow_white{
+        top:172px;
+    }
+}
+.btn_gotop{
+    visibility: hidden;
+}
