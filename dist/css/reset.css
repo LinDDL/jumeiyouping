@@ -1,19 +1,88 @@
-html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
-fieldset, img { border:0; }
-html,body{font: 12px/1.5 arial,'Hiragino Sans GB','\5FAE\8F6F\96C5\9ED1',sans-serif;}
-img{display: block;}
-address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
-ul, ol { list-style:none; } 
-body { color:#333; padding:5px 0; font:12px/20px "SimSun","宋体","Arial Narrow",HELVETICA; background:#fff;overflow-x:scroll; /*overflow-x:hidden;*/}
-a {color: #6c6c6c;; text-decoration:none;}
-a:visited { color:#666; }
-a:hover,a:active,a:focus{ color: #ed155b}
-.clearfix:after{clear:both; content:''; font-size:0; display:block; visibility:hidden; height:0}
-em{font-style: none;}
-input,option,select,button{outline:none;border:none;cursor: pointer;}
+html {
+  color: #000;
+  background: #fff; }
+
 blockquote, body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul {
-    margin: 0;
-    padding: 0;
-}
-body a:hover{color: #ed155b}
-body, html { background: #f7f7f7;}
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: 400; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 400; }
+
+q:after, q:before {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%; }
+
+legend {
+  color: #000; }
+
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:after {
+  content: "\00A0";
+  display: block;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden; }
+
+body {
+  font: 12px/1.5 arial,'Hiragino Sans GB','\5FAE\8F6F\96C5\9ED1',sans-serif; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+img {
+  vertical-align: bottom; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.hide {
+  display: none; }
+
+a {
+  text-decoration: none; }

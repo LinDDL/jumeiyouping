@@ -226,7 +226,7 @@
         </div>
     </div>
     <!-- 今日必看\今明日爆款\今日推荐品牌团 -->
-    <div class="today_main box">
+    <div class="today_main box ban">
         <h2 class="floor_item_title"></h2>
         <div class="today_later_tab">
             <div class="tab_wrap">
@@ -278,7 +278,7 @@
         </div>
     </div>
     <!-- 今日上新 -->
-    <div class="today_new_deal box">
+    <div class="today_new_deal box ban">
         <div class="today_deal_title">
             <h2 class="floor_deal_title"></h2>
             <p class="today_deal_tips">每日十点上新</p>
@@ -329,7 +329,7 @@
         </div>
     </div>
     <!-- 美妆品牌团 -->
-    <div class="cosmetics box">
+    <div class="cosmetics box ban">
         <div class="cosmetics_floor">
             <h2 class="floor_head">
                 <a href="#" class="floor-view-more">查看更多&gt;&gt;</a>
@@ -498,9 +498,24 @@
             <script>function change_urlknet(eleId){var str= document.getElementById(eleId).href;var str1 =str.substring(0,(str.length-6));str1+=RndNum(6);document.getElementById(eleId).href=str1;}function RndNum(k){var rnd="";for (var i=0;i<k;i++){rnd+=Math.floor(Math.random()*10);}return rnd;}</script>
         </div>
     </div>
+    <!-- 左浮框 -->
+    <div class="left_nav">
+        <div class="left_nav_box">
+            <div class="index">
+                聚美<br />优品
+            </div>
+            <ul class="left_list">
+                <li class="nav_mustsee"><a href="javascript:void(0)"><span>每日必看</span></a></li>
+                <li class="nav_today_deals"><a href="javascript:void(0)"><span>上新单品</span> </a></li>
+                <li class="nav_cosmetics_floor"><a href="javascript:void(0)"><span>品牌团</span> </a></li>
+            </ul>
+        </div>
+        
+    </div>
 <script src="//localhost:35729/livereload.js?snipver=1" async="" defer=""></script></body>
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="script/swiper.js"></script>
 <script src="script/main.js"></script>
 <script src="script/tab_box.js"></script>
+<script src="script/today_now.js"></script>

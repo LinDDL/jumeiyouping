@@ -47,9 +47,17 @@ gulp.task("watch", ()=>{
 gulp.task("default",["watch","connect"]);
 
 // script 转存指令;
-
+gulp.task("es6",()=>{
+    return gulp.src(["es6/*.js"])
+    .pipe(babel(
+    //     {
+    //     presets: ['@babel/env']
+    // }
+    ))
+    .pipe(gulp.dest("dist/es6"));
+})
 gulp.task("script", ()=>{
-    return gulp.src(["script/*.js","!script/swiper.js","!script/tab_box.js"])
+    return gulp.src(["script/*.js","!script/swiper.js","!script/tab_box.js","!script/today_now.js"])
     .pipe(concat("main.js"))
     .pipe(uglify())
     .pipe(gulp.dest("dist/script"));
@@ -72,11 +80,4 @@ gulp.task("sass", () =>{
     return gulp.src(["sass/*.scss"])
            .pipe(sass().on("error",sass.logError))
            .pipe(gulp.dest("dist/css"))
-})
-gulp.task("es6",()=>{
-    return gulp.src("es6/*.js")
-    .pipe(babel({
-        presets: ['@babel/env']
-    }))
-    .pipe(gulp.dest("dist/script"));
 })

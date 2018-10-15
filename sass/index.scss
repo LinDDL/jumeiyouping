@@ -338,9 +338,10 @@ em,i{font-style: normal;}
                 }
             }
             .old_price{
-                position: absolute;
-                bottom:14px;
-                left:100px;
+                // position: absolute;
+                // bottom:14px;
+                // left:100px;
+                margin-top:20px;
                 float: left;
                 margin-left: 5px;
                 color: #727272;
@@ -464,6 +465,7 @@ em,i{font-style: normal;}
     background-position: -82px 0;
 }
 .commit_new{
+    display:none;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -623,7 +625,7 @@ em,i{font-style: normal;}
     position: absolute;
     top: 10px;
     right: 10px;
-    // display: none;
+    display: none;
     // z-index: 1;
 }
  .add_cart, .deal_tips, .cate_look {
@@ -771,6 +773,7 @@ em,i{font-style: normal;}
         overflow: hidden;
         display: block;
         cursor: pointer;
+        font-weight:600;
     }
     
 }
@@ -935,3 +938,92 @@ em,i{font-style: normal;}
         background: url(../images/bz.jpg) no-repeat;
     }
 } 
+.left_nav{
+    width: 60px;
+    position: fixed;
+    top: 100px;
+    right: 50%;
+    _zoom: 1;
+    margin-right: 560px;
+    overflow: visible;
+    z-index: 12;
+    opacity: 0;
+    visibility: hidden;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    transform: scale(1.2);
+    transition: all .3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.left_nav_box{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: block;
+    margin: auto;
+    .act{
+        color: #fff;
+        text-decoration: none;
+        background: url(../images/pc_new.jpg) #fe6397 no-repeat;
+    }
+   
+}
+.left_nav_box a{
+    width: 60px;
+    height: 22px;
+    padding-top: 40px;
+    text-align: center;
+    display: block;
+    color: #8f8f8f;
+    background: url(../images/pc_new.jpg) no-repeat;
+}
+.left_nav_box a:hover {
+    text-decoration: none;
+    color: #fe5b91;
+    background: url(../images/pc_new.jpg) #fff no-repeat;
+}
+.left_nav_box .nav_mustsee a:hover {
+    background-position: -88px 0;
+}
+.nav_today_deals a,.nav_today_deals .act {
+    background-position: 0 -124px;
+}
+.nav_today_deals a:hover {
+    background-position: -88px -124px;
+}
+.nav_cosmetics_floor a,.nav_cosmetics_floor .act {
+    background-position: 0 -186px;
+}
+.nav_cosmetics_floor a:hover {
+    background-position: -88px -186px;
+}
+.left_nav_box .nav_mustsee .act, .left_nav_box .nav_mustsee .act:hover {
+    background-position: -176px 0;
+}
+.index{
+    width: 60px;
+    height: 45px;
+    font-size: 14px;
+    background: #fe6397;
+    color: #fff;
+    text-align: center;
+    padding-top: 14px;
+    border-bottom: 1px solid #fff;
+}
+.left_list{
+    border-bottom: 2px solid #fe6397;
+    width: 60px;
+    li {
+        height: 62px;
+    }
+}
+.home_nav_bar_action {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    transform: scale(1);
+}
