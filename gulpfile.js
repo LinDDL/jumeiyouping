@@ -38,10 +38,11 @@ gulp.task("html", ()=>{
 })
 
 gulp.task("watch", ()=>{
-    gulp.watch("jumei_home page.html",["html","sass"]);
+    gulp.watch("*.html",["html","sass"]);
     gulp.watch("sass/*.scss",["html","sass"]);
     gulp.watch("images/*.*",["images"]);
     gulp.watch("script/*.js",["html","script"]);
+    gulp.watch("styles/*.css",["html","css"]);
 })
 
 gulp.task("default",["watch","connect"]);
@@ -77,7 +78,7 @@ gulp.task("css", ()=>{
 })
 
 gulp.task("sass", () =>{
-    return gulp.src(["sass/*.scss"])
+    return gulp.src(["sass/*.scss","!sass/login.sass"])
            .pipe(sass().on("error",sass.logError))
            .pipe(gulp.dest("dist/css"))
 })
