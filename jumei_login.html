@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登录聚美</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div class="header">
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div class="center">
+    <div class="center" id="logins">
         <div class="inner box clearfix">
             <div class="loginImg ">
 
@@ -31,23 +31,43 @@
                 </div>
                 <div class="radiobox">
                     <span>
-                        <input type="radio" name="login" checked>
-                        <label for="">手机动态密码登录</label>
+                        <input type="radio" name="login" checked id="mobie">
+                        <label for="mobie">手机动态密码登录</label>
                     </span>
                     <span>
-                        <input type="radio" name="login">
-                        <label for="">普通登录</label>
+                        <input type="radio" name="login" id="nomal">
+                        <label for="nomal">普通登录</label>
                     </span>
                 </div>
-                    <form action="" class="in_box">
-                        <input type="text" placeholder="已注册的手机号码" class="inpu">
-                        <div class="pass">
-                            <input type="text" placeholder="动态密码" id="dynamic_password">
+                    <form action="" class="in_box" >
+                        <div class="the_box">
+                            <input type="text" placeholder="已注册的手机号码" class="inpu num">
+                            <div class="focus_text">请输入11位手机号码</div>
+                        </div>                       
+                        <div class="pass the_box">
+                            <input type="text" placeholder="动态密码" id="dynamic_password" class="dynamic_password">
                             <a href="javascript:;" id="getPhoneCode" class="phonecode"><strong>获取手机动态密码</strong></a>
+                            <div class="focus_text my_text">请点击获取手机动态密码</div>
                         </div>
-                        <p><input type="checkbox" checked><label>&nbsp;自动登录</label></p>
-                        <button id="btn">登录</button>
                     </form>
+                    <form action="" class="in_box noma" style="display:none;">
+                        <div class="the_box">
+                            <input type="text" placeholder="已验证手机/邮箱/用户名" class="inpu myname">
+                            <div class="focus_text">请输入登录名，登录名可能是您的手机号、邮箱或用户名</div>
+                        </div>
+                        <div class="the_box the_o">
+                            <input type="text" placeholder="密码" class="inpu password">   
+                            <div class="focus_text">请输入您的密码，您的密码可能为字母、数字或符号的组合</div>
+                        </div>
+                        <div id="slider">
+                            <div class="drag_bg"></div>
+                            <div class="drag_text" onselectstart="return false;"
+                            unselectable="on">拖动滑块验证</div>
+                            <div class="handler handler_bg"></div>
+                        </div>               
+                    </form>
+                    <p><input type="checkbox" checked><label>&nbsp;自动登录</label></p>
+                    <button id="btn">登录</button>
                     <div class="bot">
                         <p>你也可以使用以下账号登录</p>
                         <p class="con clearfix">
@@ -64,6 +84,59 @@
                             <a href="/i/extconnect/?site_name=tuan800&amp;redirect=http%3A%2F%2Fbj.jumei.com%2F" class="a9" title="团800">团800</a>
                         </p>
                     </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="center" id="ress" style="display: none;">
+        <div class="inner box clearfix">
+            <div class="regImg ">
+
+            </div>
+            <div class="reg_box">
+                <div class="title">
+                    <div class="toresigter">已有聚美账号？<a href="">在此登录</a></div>
+                    <h1><strong>用户注册</strong></h1>
+                </div>
+                <form id="phone" method="post">
+                    <div class="line">
+                        <div class="textbox_ui">
+                            <input type="text" id="mobile" placeholder="手机号">
+                            <div class="focus_text">请输入11位手机号码</div>
+                        </div>
+                    </div>
+                    <div class="line verityWrap">
+                        <div class="textbox_ui sms_verify_wrapper">
+                            <input type="text" id="mobile_verify" placeholder="短信校验码" >
+                            <div class="focus_text">请输入6位短信校验码</div>
+                        </div>
+                        <a href="javascript:;" id="getPhoneCode" class="phonecode"><strong>获取短信校验码</strong></a>
+                    </div>
+                    <div class="line">
+                        <div class="textbox_ui">
+                            <input type="password" placeholder="密码" id="password" autocomplete="off">
+                            <div class="focus_text">
+                                <p class="default">6-16个字符，建议使用字母加数字或符号组合</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="textbox_ui">
+                            <input type="password" id="password2" placeholder="重复密码" autocomplete="off">
+                            <div class="focus_text">请再次输入密码</div>
+                            
+                        </div>
+                    </div>
+                    <div class="act" style="margin-left: 0px;">
+                        <p>
+                            <input type="submit" class="submit_btn" value="同意协议并注册" name="mobileCommit" style="width: 100%;">
+                        </p>
+                        <p>
+                            <a href="http://www.jumei.com/help/user_terms" rel="nofollow" target="_blank" style="color:#ed145b;">《聚美优品用户协议》</a>
+                        </p>
+                    </div>
+                    <br>
+                </form>
             </div>
             
         </div>
@@ -89,4 +162,7 @@
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="script/jumei_login_more.js"></script>
+<!-- <script src="script/jumei_login_more.js"></script> -->
+<script src="script/jumei_login_success.js"></script>
+<!-- <script src="script/jumei_login_focus.js"></script> -->
+<script src="script/login.js"></script>

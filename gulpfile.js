@@ -58,8 +58,14 @@ gulp.task("es6",()=>{
     .pipe(gulp.dest("dist/es6"));
 })
 gulp.task("script", ()=>{
-    return gulp.src(["script/*.js","!script/swiper.js","!script/tab_box.js","!script/today_now.js"])
+    return gulp.src(["script/*.js","!script/swiper.js","!script/tab_box.js","!script/today_now.js","!script/jumei_login_focus.js","!script/jumei_login_more.js","!script/jumei_login_success.js"])
     .pipe(concat("main.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest("dist/script"));
+})
+gulp.task("script", ()=>{
+    return gulp.src(["script/jumei_login_focus.js","script/jumei_login_more.js","!script/jumei_login_success.js"])
+    .pipe(concat("login.js"))
     .pipe(uglify())
     .pipe(gulp.dest("dist/script"));
 })
@@ -82,3 +88,9 @@ gulp.task("sass", () =>{
            .pipe(sass().on("error",sass.logError))
            .pipe(gulp.dest("dist/css"))
 })
+gulp.task("sass", () =>{
+    return gulp.src(["sass/login.scss"])
+           .pipe(sass().on("error",sass.logError))
+           .pipe(gulp.dest("dist/css"))
+})
+

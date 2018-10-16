@@ -1,0 +1,53 @@
+//表单验证，当聚焦时显示下面的div
+$(function(){
+    $(".num").focus(function(){
+        $(".num").siblings(".focus_text").css({"display":"block"})
+    })
+    $(".num").focusout(function(){
+        $(".num").siblings(".focus_text").css({"display":"none"})
+    })
+    $(".password").focus(function(){
+        $(".password").siblings(".focus_text").css({"display":"block"})
+    })
+    $(".password").focusout(function(){
+        $(".password").siblings(".focus_text").css({"display":"none"})
+    })
+    $(".dynamic_password").focus(function(){
+        $(".dynamic_password").siblings(".focus_text").css({"display":"block"})
+    })
+    $(".dynamic_password").focusout(function(){
+        $(".dynamic_password").siblings(".focus_text").css({"display":"none"})
+    })
+    $(".myname").focus(function(){
+        $(".myname").siblings(".focus_text").css({"display":"block"})
+    })
+    $(".myname").focusout(function(){
+        $(".myname").siblings(".focus_text").css({"display":"none"})
+    })
+
+    $("#mobile").focus(function(){
+        $("#mobile").siblings(".focus_text").css({"display":"block"})
+    })
+    $("#mobile").focusout(function(){
+        $("#mobile").siblings(".focus_text").css({"display":"none"})
+    })
+    $("#mobile_verify").focus(function(){
+        $("#mobile_verify").siblings(".focus_text").css({"display":"block"})
+    })
+    $("#mobile_verify").focusout(function(){
+        $("#mobile_verify").siblings(".focus_text").css({"display":"none"})
+    })
+    $("#password").focus(function(){
+        $("#password").siblings(".focus_text").css({"display":"block"})
+    })
+    $("#password").focusout(function(){
+        $("#password").siblings(".focus_text").css({"display":"none"})
+    })
+    $("#password2").focus(function(){
+        $("#password2").siblings(".focus_text").css({"display":"block"})
+    })
+    $("#password2").focusout(function(){
+        $("#password2").siblings(".focus_text").css({"display":"none"})
+    })
+    
+})
