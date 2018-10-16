@@ -84,7 +84,7 @@ gulp.task("css", ()=>{
 })
 
 gulp.task("sass", () =>{
-    return gulp.src(["sass/*.scss","!sass/login.sass","!sass/res.scss"])
+    return gulp.src(["sass/*.scss","!sass/login.sass","!sass/res.scss","!particulars_page.scss"])
            .pipe(sass().on("error",sass.logError))
            .pipe(gulp.dest("dist/css"))
 })
@@ -98,3 +98,9 @@ gulp.task("sass", () =>{
            .pipe(sass().on("error",sass.logError))
            .pipe(gulp.dest("dist/css"))
 })
+gulp.task("sass", () =>{
+    return gulp.src(["sass/particulars_page.scss"])
+           .pipe(sass().on("error",sass.logError))
+           .pipe(gulp.dest("dist/css"))
+})
+

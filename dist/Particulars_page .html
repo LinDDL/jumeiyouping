@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/particulars_page.css">
+    <title>商品详情页</title>
+</head>
+<body>
+    <div class="headerTop">
+        <div class="hdtop box">
+            <!--login and register-->
+            <div class="hdLeft">
+                <span>欢迎来到聚美优品</span>
+                <a href="http://localhost:8001/jumei_login.html">请登录</a>
+                <a href="http://localhost:8001/jumei_res.html?">快速注册</a>
+            </div>
+            <!-- right list -->
+            <ul class="hdRight">
+                <li><a href="javascript:void(0)">正品保证</a></li>
+                <li><a href="javascript:void(0)">订单查询</a></li>
+                <li><a href="javascript:void(0)"><i class="icon_favorite icon"></i>收藏的品牌</a></li>
+                <li class="item_mobile">
+                    <a href="javascript:void(0)">我的聚美<i class="icon_arrow icon_arrow_down"></i></a>
+                    <i class="icon_arrow_back"></i>
+                    <div class="sub_nav">
+                        <ul>
+                            <li><a href="javascript:void(0)">我的订单</a></li>
+                            <li><a href="javascript:void(0)">我的现金券</a></li>
+                            <li><a href="javascript:void(0)">我的红包</a></li>
+                            <li><a href="javascript:void(0)">我的余额</a></li>
+                            <li><a href="javascript:void(0)">我的体现退款</a></li>
+                            <li><a href="javascript:void(0)">我的收藏</a></li>
+                            <li><a href="javascript:void(0)">我的心愿单</a></li>
+                            <li><a href="javascript:void(0)">会员中心</a></li>
+                            <li><a href="javascript:void(0)">礼品卡兑换</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0)"><span class="line"></span><i class="icon icon_mobile"></i> 手机聚美</a></li>
+                <li><span class="line"></span></li>
+                <li class="item_more">
+                    <a href="javascript:void(0)">更多<i class="icon_arrow icon_arrow_down"></i> </a>
+                    <i class="icon_arrow_back"></i>
+                    <div class="sub_nav">
+                        <ul>
+                            <li><a href="http://i.jumei.com/i/account/referrals/">邀请好友</a></li>
+                            <li><a href="javascript:void(0)">加入收藏</a></li>
+                            <li><a href="http://weibo.com/tuanmei" class="img_box">新浪微博<span><img src="http://p0.jmstatic.com/templates/jumei/images/sina_er.png" alt=""></span></a></li>
+                            <li><a href="javascript:void(0)" class="img_box">聚美微信<span><img src="http://p0.jmstatic.com/jumei_weixin_header1.png" alt=""></span></a></li>
+                            <li><a href="http://tieba.baidu.com/f?kw=%BE%DB%C3%C0%D3%C5%C6%B7&fr=ala0">百度贴吧</a></li>
+                            <li><a href="http://t.qq.com/jumei_tuangou" class="img_box">腾讯微博<span><img src="http://p0.jmstatic.com/templates/jumei/images/qq_er.png" alt=""></span></a></li>
+                            <li><a href="http://page.renren.com/601021070" class="img_box">人人公众主页<span><img src="http://p0.jmstatic.com/templates/jumei/images/renren_er.png" alt=""></span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="headerCenter">
+        <!--logo+搜索栏+购物车 -->
+        <div class="hdCenter box">
+            <h1 class="logo"><a href="http://ww.jumei.com" title="聚美优品"></a></h1>
+            <div class="header_searchbox">
+                <form action="" method="get">
+                    <!-- http://search.jumei.com -->
+                    <input type="text" name="search" class="header_searchbox_input">
+                    <button type="submit" class="header_search_btn">搜索</button>
+                </form>
+                <div class="search_results">
+                    <div class="selected"><span>补水</span><label>约4186件</label></div>
+                    <div><span>在面膜分类中搜索</span><label>约3457件</label></div>
+                    <div><span>在护肤套装分类中搜索</span><label>约3396件</label></div>
+                    <div><span>补水面膜</span><label>约1823件</label></div>
+                    <div><span>补水套装</span><label>约1661件</label></div>
+                    <div><span>补水喷雾</span><label>约201件</label></div>
+                    <div><span>补水爽肤水</span><label>约1210件</label></div>
+                    <div><span>补水精华</span><label>约973件</label></div>
+                    <div><span>补水仪</span><label>约67件</label></div>
+                </div>
+                <ul class="hot_word">
+                    <li><a href="javascript:void(0)">保湿</a></li>
+                    <li><a href="javascript:void(0)">面膜<span class="line"></span></a></li>
+                    <li><a href="javascript:void(0)">洗面奶<span class="line"></span></a></li>
+                    <li><a href="javascript:void(0)">补水<span class="line"></span></a></li>
+                    <li><a href="javascript:void(0)">香水<span class="line"></span></a></li>
+                    <li><a href="javascript:void(0)">眼霜<span class="line"></span></a></li>
+                    <li><a href="javascript:void(0)">口红<span class="line"></span></a></li>
+                    <li><a href="javascript:void(0)">护肤套装<span class="line"></span></a></li>
+                    <li><a href="javascript:void(0)">BB霜</a></li>
+                </ul>
+            </div>
+            <div class="car_box">
+                <a href="javascript:void(0)" class="car_link">
+                    <img src="http://p0.jmstatic.com/assets/cart.gif" alt="" class="car_gif">
+                    <span class="text">去购物车结算</span>
+                    <i class="icon_arrow icon_arrow_down"></i>
+                    <div class="carContent">
+                        <i class="car-icons"></i>
+                        <div class="carContent_zero">
+                            购物车中还没有东西，<br>
+                            快去挑选心爱的商品吧！
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="headerBottom clearfix">
+        <div class="hdBottom box clearfix">
+            <ul class="nav">
+                <li class="home_page"><a href="javascript:void(0)">首页</a></li>
+                <li><a href="javascript:void(0)">极速免税店</a></li>
+                <li><a href="javascript:void(0)">母婴特卖</a></li>
+                <li><a href="javascript:void(0)" class="shopping">美妆商城<i class="icon_arrow icon_arrow_down"></i></a></li>
+                <li><a href="javascript:void(0)">国际轻奢</a></li>
+                <li><a href="javascript:void(0)">服装运动</a></li>
+                <li><a href="javascript:void(0)">鞋包配饰</a></li>
+            </ul>
+            <!-- 美妆商城隐藏部分 -->
+            <div class="pop_box">
+                <div class="pop_left">
+                    <a href="javascript:void(0)">
+                        <img src="images/pop1.jpg" alt="">
+                    </a>
+                    <a href="javascript:void(0)">
+                        <img src="images/pop2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="pop_right clearfix">
+                    <dl>
+                        <dt class="pop_tit1"><a href="javascript:void(0)">国际大牌</a> </dt>
+                        <dd><a href="">兰蔻</a></dd>
+                        <dd><a href="">娇韵诗</a></dd>
+                        <dd><a href="">伊丽莎白雅顿</a></dd>
+                        <dd><a href="">雅思兰黛</a></dd>
+                        <dd><a href="">欧莱雅</a></dd>
+                        <dd><a href="">兰芝</a></dd>
+                        <dd><a href="">倩碧</a></dd>
+                        <dd><a href="">雅漾</a></dd>
+                        <dd><a href="">菲斯小铺</a></dd>
+                        <dd><a href="">悦诗风呤</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="pop_tit2"><a href="javascript:void(0)">护肤</a></dt>
+                        <dd><a href="">洁面</a></dd>
+                        <dd><a href="">爽肤水</a></dd>
+                        <dd><a href="">精华</a></dd>
+                        <dd><a href="">乳液</a></dd>
+                        <dd><a href="">面霜</a></dd>
+                        <dd><a href="">眼霜</a></dd>
+                        <dd><a href="">护肤套装</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="pop_tit3"><a href="javascript:void(0)">彩妆</a></dt>
+                        <dd><a href="">卸妆</a></dd>
+                        <dd><a href="">BB霜</a></dd>
+                        <dd><a href="">粉底液</a></dd>
+                        <dd><a href="">粉饼</a></dd>
+                        <dd><a href="">眼影</a></dd>
+                        <dd><a href="">眼线笔</a></dd>
+                        <dd><a href="">眼睫毛</a></dd>
+                        <dd><a href="">睫毛膏</a></dd>
+                        <dd><a href="">眉笔</a></dd>
+                        <dd><a href="">口红</a></dd>
+                        <dd><a href="">晒红</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="pop_tit4"><a href="javascript:void(0)">香氛</a></dt>
+                        <dd><a href="">女士香水</a></dd>
+                        <dd><a href="">男士香水</a></dd>
+                        <dd><a href="">中性香水</a></dd>
+                        <dd><a href="">Q版香水</a></dd>
+                        <dd><a href="">香水套装</a></dd>
+                        <dd><a href="">精油</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="pop_tit5"><a href="javascript:void(0)">男士专区</a></dt>
+                        <dd><a href="">洁面</a></dd>
+                        <dd><a href="">爽肤水</a></dd>
+                        <dd><a href="">面霜</a></dd>
+                        <dd><a href="">精华</a></dd>
+                        <dd><a href="">护肤套装</a></dd>
+                        <dd><a href="">洗发</a></dd>
+                        <dd><a href="">沐浴</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="pop_tit6"><a href="javascript:void(0)">热门搜索</a></dt>
+                        <dd><a href="">面膜贴</a></dd>
+                        <dd><a href="">洗面奶</a></dd>
+                        <dd><a href="">唇膏</a></dd>
+                        <dd><a href="">去黑头</a></dd>
+                        <dd><a href="">祛斑</a></dd>
+                        <dd><a href="">隔离</a></dd>
+                        <dd><a href="">祛痘</a></dd>
+                        <dd><a href="">去角质</a></dd>
+                        <dd><a href="">指甲油</a></dd>
+                    </dl>
+                </div>
+            </div>
+            <ul class="icon_wrap">
+                <li><a href="javascript:void(0)"><span></span></a></li>
+                <li><a href="javascript:void(0)"><span class="th"></span></a></li>
+                <li><a href="javascript:void(0)"><span class="td"</span></a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="nav_top">
+    </div>
+    <div class="nav_botton">
+        <div class="nav_b_center">
+            <ul class="f_nav">
+                <li><a href="javascript:void(0)">首页</a></li>
+                <li><a href="javascript:void(0)">全部商品</a></li>
+                <li><a href="javascript:void(0)">奢品美妆</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="collect_btn">收藏</a>
+            <a href="javascript:void(0)" class="nav_store_name">兰蔻（Lancome）聚美专卖店</a>
+            <div class="dec">
+                <div class="auth_arrow"></div>
+                <div class="auth_tip_con"> 兰蔻(Lancome)聚美专卖店<br> 所售商品正品保证,安全有效 </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_box">
+        <div class="model_left">
+            <h2 style="color:#ffffff;background:#000000;">按分类</h2>
+            <ul class="model_nav">
+                <li><a href="javascript:void(0)">彩妆</a></li>
+                <li><a href="javascript:void(0)">面部护肤</a></li>
+                <li><a href="javascript:void(0)">香水</a></li>
+                <li><a href="javascript:void(0)">男士护理</a></li>
+            </ul>
+            <h2 style="color:#ffffff;background:#000000;">按功效</h2>
+            <ul class="model_nav">
+                <li><a target="_blank" href="javascript:void(0)">紧致</a></li>
+                <li><a target="_blank" href="javascript:void(0)">均匀肤色</a></li>
+                <li><a target="_blank" href="javascript:void(0)">持久</a></li>
+                <li><a target="_blank" href="javascript:void(0)">清洁</a></li>
+                <li><a target="_blank" href="javascript:void(0)">保湿</a></li>
+                <li><a target="_blank" href="javascript:void(0)">修护肌肤</a></li>
+                <li><a target="_blank" href="javascript:void(0)">美白</a></li>
+                <li><a target="_blank" href="javascript:void(0)">补水</a></li>
+                <li><a target="_blank" href="javascript:void(0)">眼部造型</a></li>
+                <li><a target="_blank" href="javascript:void(0)">滋润</a></li>
+                <li><a target="_blank" href="javascript:void(0)">抗皱</a></li>
+                <li><a target="_blank" href="javascript:void(0)">去黑眼圈</a></li>
+                <li><a target="_blank" href="javascript:void(0)">遮瑕</a></li>
+                <li><a target="_blank" href="javascript:void(0)">控油</a></li>
+                <li><a target="_blank" href="javascript:void(0)">收敛毛孔</a></li>
+                <li><a target="_blank" href="javascript:void(0)">修护</a></li>
+                <li><a target="_blank" href="javascript:void(0)">抗衰老</a></li>
+                <li><a target="_blank" href="javascript:void(0)">防晒</a></li>
+                <li><a target="_blank" href="javascript:void(0)">去角质</a></li>
+                <li><a target="_blank" href="javascript:void(0)">舒缓</a></li>
+                <li><a target="_blank" href="javascript:void(0)">净肤</a></li>
+                <li><a target="_blank" href="javascript:void(0)">抗敏感</a></li>
+                <li><a target="_blank" href="javascript:void(0)">祛斑</a></li>
+                <li><a target="_blank" href="javascript:void(0)">定妆</a></li>
+                <li><a target="_blank" href="javascript:void(0)">去眼袋</a></li>
+                <li><a target="_blank" href="javascript:void(0)">隔离</a></li>
+                <li><a target="_blank" href="javascript:void(0)">清爽</a></li>
+                <li><a target="_blank" href="javascript:void(0)">嫩肤</a></li>
+                <li><a target="_blank" href="javascript:void(0)">修容</a></li>
+                <li><a target="_blank" href="javascript:void(0)">抗氧化</a></li>
+                <li><a target="_blank" href="javascript:void(0)">净化</a></li>
+                <li><a target="_blank" href="javascript:void(0)">柔肤</a></li>
+                <li><a target="_blank" href="javascript:void(0)">润唇</a></li>
+                <li><a target="_blank" href="javascript:void(0)">丰唇</a></li>
+                <li><a target="_blank" href="javascript:void(0)">不易脱妆</a></li>
+                <li><a target="_blank" href="javascript:void(0)">修饰</a></li>
+                <li><a target="_blank" href="javascript:void(0)">淡化黑色素</a></li>
+                <li><a target="_blank" href="javascript:void(0)">活肤</a></li>
+                <li><a target="_blank" href="javascript:void(0)">改善肤质</a></li>
+                <li><a target="_blank" href="javascript:void(0)">缩小毛孔</a></li>
+                <li><a target="_blank" href="javascript:void(0)">护理</a></li>
+                <li><a target="_blank" href="javascript:void(0)">男士</a></li>
+                <li><a target="_blank" href="javascript:void(0)">香氛</a></li>
+            </ul>
+            <h2 style="color:#ffffff;background:#000000;">按系列</h2>
+            <ul class="model_nav">
+                <li><a href="javascript:void(0)">智能增白系列</a></li>
+                <li><a href="javascript:void(0)">新立体素颜系列</a></li>
+                <li><a href="javascript:void(0)">小黑瓶系列</a></li>
+                <li><a href="javascript:void(0)">微修复系列</a></li>
+                <li><a href="javascript:void(0)">水份缘舒缓系列</a></li>
+                <li><a href="javascript:void(0)">柔皙轻透防晒系列</a></li>
+            </ul>
+        </div>
+        <div class="model_right">
+            <div id="model_彩妆系列" mid="47585" productnum="15" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="javascript:void(0)">彩妆系列</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1948&amp;from=store_lancome_index_804_47585_1">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="13051" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_13051.html?from=store_lancome_index_804_47585_1&amp;site=bj" target="_blank">
+                                                <div class="qiang_guang"></div> <img original="http://p0.jmstatic.com/product/000/013/13051_std/13051_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/013/13051_std/13051_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_13051.html?from=store_lancome_index_804_47585_1" target="_blank"> <span class="disc">    </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)速洁眼部卸妆水 30ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>49.9</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 2861篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:94" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="btn_notice" href="http://www.jumei.com/i/deal/mobile_subscribe/?id=13051" data-sku="" data-from="store_lancome_index_804_47585_1" title="到货通知"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="13051" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>清洁</span> <span>滋润</span> <span>温和</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="193895" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_193895.html?from=store_lancome_index_804_47585_1" target="_blank"> <img original="http://p0.jmstatic.com/product/000/193/193895_std/193895_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/193/193895_std/193895_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_193895.html?from=store_lancome_index_804_47585_1" target="_blank"> <span class="disc">    </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)梦魅睛灵防水睫毛膏01# 6.5g/6.5ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>269</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 110篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_193895/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="193895" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>睫毛增长</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="362169" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_362169.html?from=store_lancome_index_804_47585_1" target="_blank"> <img original="http://p0.jmstatic.com/product/000/362/362169_std/362169_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/362/362169_std/362169_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_362169.html?from=store_lancome_index_804_47585_1" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)梦魅巨星璀璨睫毛膏01# 6.5g/ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>340</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 97篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_362169/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="362169" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>眼部造型</span> <span>装扮</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_超值套组" mid="47586" productnum="3" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1949&amp;from=store_lancome_index_804_47586_2">超值套组</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1949&amp;from=store_lancome_index_804_47586_2">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="2607417" bid="3660" cid="23" search_product_type="mall" h_p_m_id="d181015p2607417zc" product_type="deal">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <div class="icon_wrap clearfix">
+                                                <div class="s_l_onsale"></div>
+                                            </div>
+                                            <a href="http://www.jumei.com/i/deal/d181015p2607417zc.html?from=store_lancome_index_804_47586_2" target="_blank"> <img original="http://p0.jmstatic.com/product/002/607/2607417_std/2607417_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/002/607/2607417_std/2607417_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://www.jumei.com/i/deal/d181015p2607417zc.html?from=store_lancome_index_804_47586_2" target="_blank"> <span class="disc">    </span> Lancome <em class="pink"></em> 兰蔻粉水小黑瓶两件旅行组 </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>119</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl">54人已购买|</div>
+                                            <div class="time_countdown" diff="130019">34<span> </span> <span class="time_countdown_black">时</span><span> </span> 40<span> </span> <span class="time_countdown_black">分</span><span> </span> 49<span> </span> <span class="time_countdown_black">秒</span></div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_2607417/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="2607417" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>滋润</span> <span>收敛毛孔</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="2607436" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_2607436.html?from=store_lancome_index_804_47586_2" target="_blank">
+                                                <div class="qiang_guang"></div> <img original="http://p0.jmstatic.com/product/002/607/2607436_std/2607436_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/002/607/2607436_std/2607436_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_2607436.html?from=store_lancome_index_804_47586_2" target="_blank"> <span class="disc">    </span> Lancome <em class="pink"></em> 法国•兰蔻(Lancome)水份缘舒缓三件旅行组1（清滢柔肤水50ml+新水份缘保湿舒缓日霜15ml+新水份缘保湿舒缓晚霜15ml） </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>159</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 807篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="btn_notice" href="http://www.jumei.com/i/deal/mobile_subscribe/?id=2607436" data-sku="" data-from="store_lancome_index_804_47586_2" title="到货通知"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="2607436" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>修护肌肤</span> <span>补水</span> <span>滋润</span> <span>舒缓</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_根源补养" mid="47587" productnum="9" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1950&amp;from=store_lancome_index_804_47587_3">根源补养</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1950&amp;from=store_lancome_index_804_47587_3">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="15661" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_15661.html?from=store_lancome_index_804_47587_3" target="_blank"> <img original="http://p0.jmstatic.com/product/000/015/15661_std/15661_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/015/15661_std/15661_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_15661.html?from=store_lancome_index_804_47587_3" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)水光润养凝（莹）珠美容液200ml（气泡水） </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>369</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 284篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:96" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_15661/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="15661" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>补水</span> <span>滋润</span> <span>修护</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="15662" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_15662.html?from=store_lancome_index_804_47587_3" target="_blank"> <img original="http://p0.jmstatic.com/product/000/015/15662_std/15662_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/015/15662_std/15662_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_15662.html?from=store_lancome_index_804_47587_3" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)水光润养活力（日）霜/光泽润养日霜 50ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>499</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 189篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:96" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_15662/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="15662" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>修护肌肤</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="226102" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_226102.html?from=store_lancome_index_804_47587_3" target="_blank"> <img original="http://p0.jmstatic.com/product/000/226/226102_std/226102_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/226/226102_std/226102_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_226102.html?from=store_lancome_index_804_47587_3" target="_blank"> <span class="disc">    </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)根源补养洁颜 啫喱/新根源补养洁颜 啫喱 125ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>199</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 194篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_226102/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="226102" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>清洁</span> <span>保湿</span> <span>滋润</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_菁纯系列" mid="47588" productnum="1" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1951&amp;from=store_lancome_index_804_47588_4">菁纯系列</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1951&amp;from=store_lancome_index_804_47588_4">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="62261" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_62261.html?from=store_lancome_index_804_47588_4" target="_blank"> <img original="http://p0.jmstatic.com/product/000/062/62261_std/62261_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/062/62261_std/62261_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_62261.html?from=store_lancome_index_804_47588_4" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)菁纯臻颜（润养)美容液/新菁纯臻颜美容液 150ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>649</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 137篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_62261/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="62261" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>紧致</span> <span>滋润</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_男士护肤系类" mid="47589" productnum="2" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1952&amp;from=store_lancome_index_804_47589_5">男士护肤系列</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1952&amp;from=store_lancome_index_804_47589_5">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="200902" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_200902.html?from=store_lancome_index_804_47589_5" target="_blank"> <img original="http://p0.jmstatic.com/product/000/200/200902_std/200902_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/200/200902_std/200902_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_200902.html?from=store_lancome_index_804_47589_5" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)男仕劲能精华露 50ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>609</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 53篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_200902/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="200902" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>紧致</span> <span>保湿</span> <span>修护肌肤</span> <span>改善肤质</span> <span>男士</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="200917" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_200917.html?from=store_lancome_index_804_47589_5" target="_blank"> <img original="http://p0.jmstatic.com/product/000/200/200917_std/200917_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/200/200917_std/200917_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_200917.html?from=store_lancome_index_804_47589_5" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新男仕塑颜眼霜 15ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>459</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 27篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_200917/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="200917" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>紧致</span> <span>修护</span> <span>男士</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_奇迹光彩系列" mid="47590" productnum="9" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1953&amp;from=store_lancome_index_804_47590_6">奇迹光采系列</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1953&amp;from=store_lancome_index_804_47590_6">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="62273" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_62273.html?from=store_lancome_index_804_47590_6" target="_blank"> <img original="http://p0.jmstatic.com/product/000/062/62273_std/62273_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/062/62273_std/62273_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_62273.html?from=store_lancome_index_804_47590_6" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新奇迹薄纱粉底液 30ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>389</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 411篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_62273/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="62273" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>均匀肤色</span> <span>遮瑕</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_清莹清洁系列" mid="47591" productnum="12" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1954&amp;from=store_lancome_index_804_47591_7">清滢清洁系列</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1954&amp;from=store_lancome_index_804_47591_7">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="19580" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_19580.html?from=store_lancome_index_804_47591_7" target="_blank"> <img original="http://p0.jmstatic.com/product/000/019/19580_std/19580_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/019/19580_std/19580_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_19580.html?from=store_lancome_index_804_47591_7" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)全新/清滢嫩肤水400ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>349</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 725篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:90" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_19580/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="19580" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>补水</span> <span>滋润</span> <span>温和</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="19584" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_19584.html?from=store_lancome_index_804_47591_7" target="_blank"> <img original="http://p0.jmstatic.com/product/000/019/19584_std/19584_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/019/19584_std/19584_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_19584.html?from=store_lancome_index_804_47591_7" target="_blank"> <span class="disc">    </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新清滢柔肤洁面乳（干性）125ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>259</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 483篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:96" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_19584/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="19584" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>清洁</span> <span>滋润</span> <span>净肤</span> <span>温和</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="19586" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_19586.html?from=store_lancome_index_804_47591_7" target="_blank"> <img original="http://p0.jmstatic.com/product/000/019/19586_std/19586_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/019/19586_std/19586_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_19586.html?from=store_lancome_index_804_47591_7" target="_blank"> <span class="disc">    </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新清滢嫩肤水200ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>249</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 161篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:78" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_19586/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="19586" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>补水</span> <span>清爽</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_柔皙轻透防晒系列" mid="47592" productnum="3" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1955&amp;from=store_lancome_index_804_47592_8">柔皙轻透防晒系列</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1955&amp;from=store_lancome_index_804_47592_8">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="506675" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_506675.html?from=store_lancome_index_804_47592_8" target="_blank"> <img original="http://p0.jmstatic.com/product/000/506/506675_std/506675_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/506/506675_std/506675_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_506675.html?from=store_lancome_index_804_47592_8" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新柔皙遮瑕/修颜隔离乳SPF30+PA+++/SPF50+PA++++（亮白色）30ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>520</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 391篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_506675/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="506675" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>隔离</span> <span>防护</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_水份缘舒缓系列" mid="47593" productnum="10" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1956&amp;from=store_lancome_index_804_47593_9">水份缘舒缓系列</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1956&amp;from=store_lancome_index_804_47593_9">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="18544" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_18544.html?from=store_lancome_index_804_47593_9" target="_blank"> <img original="http://p0.jmstatic.com/product/000/018/18544_std/18544_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/018/18544_std/18544_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_18544.html?from=store_lancome_index_804_47593_9" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻（Lancome）新水份缘舒缓日霜 均衡型 /新水份缘保湿舒缓日霜50ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>499</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 326篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_18544/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="18544" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>补水</span> <span>舒缓</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="19567" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_19567.html?from=store_lancome_index_804_47593_9" target="_blank"> <img original="http://p0.jmstatic.com/product/000/019/19567_std/19567_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/019/19567_std/19567_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_19567.html?from=store_lancome_index_804_47593_9" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新水份缘保湿舒缓精华液/新水份缘舒缓精华液30ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>489</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 200篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_19567/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="19567" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>补水</span> <span>滋润</span> <span>舒缓</span> <span>温和</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="24176" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_24176.html?from=store_lancome_index_804_47593_9" target="_blank"> <img original="http://p0.jmstatic.com/product/000/024/24176_std/24176_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/024/24176_std/24176_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_24176.html?from=store_lancome_index_804_47593_9" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新水份缘保湿舒缓晚霜/新水份缘舒缓晚霜 50ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>499</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 168篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_24176/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="24176" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>补水</span> <span>滋润</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_微修护系列" mid="47594" productnum="7" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1957&amp;from=store_lancome_index_804_47594_10">微修护系列</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1957&amp;from=store_lancome_index_804_47594_10">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="148726" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_148726.html?from=store_lancome_index_804_47594_10" target="_blank"> <img original="http://p0.jmstatic.com/product/000/148/148726_std/148726_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/148/148726_std/148726_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_148726.html?from=store_lancome_index_804_47594_10" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻（Lancome)美肤修护精华乳30ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>609</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 34篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_148726/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="148726" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>紧致</span> <span>修护肌肤</span> <span>滋润</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="193893" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_193893.html?from=store_lancome_index_804_47594_10" target="_blank"> <img original="http://p0.jmstatic.com/product/000/193/193893_std/193893_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/193/193893_std/193893_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_193893.html?from=store_lancome_index_804_47594_10" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome) 美肤修护美容液 200ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>419</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 109篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_193893/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="193893" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>修护肌肤</span> <span>柔肤</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="200885" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_200885.html?from=store_lancome_index_804_47594_10" target="_blank"> <img original="http://p0.jmstatic.com/product/000/200/200885_std/200885_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/200/200885_std/200885_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_200885.html?from=store_lancome_index_804_47594_10" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻（Lancome)美肤修护精华乳50ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>799</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 45篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_200885/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="200885" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>紧致</span> <span>保湿</span> <span>滋润</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_小黑瓶系列" mid="47595" productnum="13" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1958&amp;from=store_lancome_index_804_47595_11">小黑瓶系列</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1958&amp;from=store_lancome_index_804_47595_11">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="18545" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_18545.html?from=store_lancome_index_804_47595_11" target="_blank"> <img original="http://p0.jmstatic.com/product/000/018/18545_std/18545_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/018/18545_std/18545_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_18545.html?from=store_lancome_index_804_47595_11" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新精华肌底液 30ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>579</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 279篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:94" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_18545/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="18545" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>均匀肤色</span> <span>修护肌肤</span> <span>滋润</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="19568" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_19568.html?from=store_lancome_index_804_47595_11" target="_blank"> <img original="http://p0.jmstatic.com/product/000/019/19568_std/19568_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/019/19568_std/19568_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_19568.html?from=store_lancome_index_804_47595_11" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)全新精华肌底眼霜/精华肌底眼部凝霜/肌底精华眼霜 15ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>429</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 2078篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:98.00000000000001" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_19568/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="19568" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>补水</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="22096" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_22096.html?from=store_lancome_index_804_47595_11" target="_blank"> <img original="http://p0.jmstatic.com/product/000/022/22096_std/22096_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/022/22096_std/22096_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_22096.html?from=store_lancome_index_804_47595_11" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新精华肌底液 50ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>799</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 695篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:96" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_22096/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="22096" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>紧致</span> <span>保湿</span> <span>滋润</span> <span>修护</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_新立体塑颜系列" mid="47596" productnum="15" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1959&amp;from=store_lancome_index_804_47596_12">新立体塑颜系列</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1959&amp;from=store_lancome_index_804_47596_12">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="135274" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_135274.html?from=store_lancome_index_804_47596_12" target="_blank">
+                                                <div class="qiang_guang"></div> <img original="http://p0.jmstatic.com/product/000/135/135274_std/135274_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/135/135274_std/135274_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_135274.html?from=store_lancome_index_804_47596_12" target="_blank"> <span class="disc">    </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新塑颜修护晚霜/新立体塑颜紧致晚霜 15ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>59.9</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 2877篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:92" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="btn_notice" href="http://www.jumei.com/i/deal/mobile_subscribe/?id=135274" data-sku="" data-from="store_lancome_index_804_47596_12" title="到货通知"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="135274" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>紧致</span> <span>滋润</span> <span>修容</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="193896" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_193896.html?from=store_lancome_index_804_47596_12" target="_blank"> <img original="http://p0.jmstatic.com/product/000/193/193896_std/193896_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/193/193896_std/193896_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_193896.html?from=store_lancome_index_804_47596_12" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新塑颜修护眼霜15ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>459</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 766篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_193896/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="193896" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>滋润</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="193898" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_193898.html?from=store_lancome_index_804_47596_12" target="_blank"> <img original="http://p0.jmstatic.com/product/000/193/193898_std/193898_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/193/193898_std/193898_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_193898.html?from=store_lancome_index_804_47596_12" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新塑颜修护晚霜/新立体塑颜紧致晚霜 50ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>699</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 112篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:100" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_193898/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="193898" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>紧致</span> <span>滋润</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="model_智能臻白系列" mid="47597" productnum="14" sidebar_img="0" shelf_img="0" moduletypeid="6" style="background: none; height: auto; opacity: 1;" loaded="true">
+                <div class="series_title">
+                    <h2> <a target="_blank" class="title_text" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1960&amp;from=store_lancome_index_804_47597_13">智能臻白系列</a> <a target="_blank" class="title_more" style="color:#ffffff;" href="http://lancome.jumei.com/search.html?series=1960&amp;from=store_lancome_index_804_47597_13">更多》</a> </h2> </div>
+                <div id="search_list_wrap">
+                    <div class="products_wrap">
+                        <ul>
+                            <li class="formall item left" pid="12079" bid="3660" cid="23" search_product_type="mall" h_p_m_id="d181015p12079zc" product_type="deal">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <div class="icon_wrap clearfix">
+                                                <div class="s_l_onsale"></div>
+                                            </div>
+                                            <a href="http://www.jumei.com/i/deal/d181015p12079zc.html?from=store_lancome_index_804_47597_13" target="_blank"> <img original="http://p0.jmstatic.com/product/000/012/12079_std/12079_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/012/12079_std/12079_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://www.jumei.com/i/deal/d181015p12079zc.html?from=store_lancome_index_804_47597_13" target="_blank"> <span class="disc">    </span> Lancome <em class="pink"></em> 兰蔻新净透泡沫洁面乳30ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>49.9</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl">133人已购买|</div>
+                                            <div class="time_countdown" diff="129772">36<span> </span> <span class="time_countdown_black">时</span><span> </span> 02<span> </span> <span class="time_countdown_black">分</span><span> </span> 40<span> </span> <span class="time_countdown_black">秒</span></div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_12079/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="12079" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>清洁</span> <span>温和</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="13038" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_13038.html?from=store_lancome_index_804_47597_13" target="_blank">
+                                                <div class="qiang_guang"></div> <img original="http://p0.jmstatic.com/product/000/013/13038_std/13038_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/013/13038_std/13038_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_13038.html?from=store_lancome_index_804_47597_13" target="_blank"> <span class="disc">    </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)新臻白晚霜 /臻白晚霜15ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>59.9</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 10636篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:96" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="btn_notice" href="http://www.jumei.com/i/deal/mobile_subscribe/?id=13038" data-sku="" data-from="store_lancome_index_804_47597_13" title="到货通知"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="13038" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>保湿</span> <span>滋润</span> <span>修护</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="formall item left" pid="19564" bid="3660" cid="23" search_product_type="mall" product_type="mall_product">
+                                <div class="item_wrap clearfix">
+                                    <div class="item_wrap_right deal_item_wrap">
+                                        <div class="s_l_pic">
+                                            <a href="http://mall.jumei.com/product_19564.html?from=store_lancome_index_804_47597_13" target="_blank"> <img original="http://p0.jmstatic.com/product/000/019/19564_std/19564_350_350.jpg" width="255" height="255" src="http://p0.jmstatic.com/product/000/019/19564_std/19564_350_350.jpg" style="display:inline;"> </a>
+                                        </div>
+                                        <div class="s_l_name">
+                                            <a href="http://mall.jumei.com/product_19564.html?from=store_lancome_index_804_47597_13" target="_blank"> <span class="disc">   <em>包邮</em>   /  </span> Lancome <em class="pink"></em> 法国•兰蔻 (Lancome)臻白晚霜/新臻白晚霜 50ml </a>
+                                        </div>
+                                        <div class="s_l_view_bg">
+                                            <div class="icon_wrap_bot clearfix"> </div>
+                                            <div class="search_list_price"> <label>¥</label> <span>579</span>
+                                                <div class="saleinfos"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="search_deal_buttom_bg clearfix">
+                                            <div class="search_pl"> 171篇评价| </div>
+                                            <div class="rating">
+                                                <div style="width:98.00000000000001" class="value"></div>
+                                            </div>
+                                        </div>
+                                        <div class="search_list_button">
+                                            <a target="_blank" class="track_click btn_addcart" track_click="b2c/product_19564/buy_list" data-sku="" data-from="store_lancome_list__list_items_index_" title="加入购物车"> </a>
+                                            <a href="javascript:;" class="btn_fav" pid="19564" title="收藏商品"></a>
+                                        </div>
+                                        <p class="search_list_tags"> <span>滋润</span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_inner box">
+            <div class="footer_top">
+                <div class="footer_icon">
+                    <a href="javascript:void(0)" class="ft_link shang"><span class="icon"></span><span class="con">值得信赖美妆电商</span>四千万用户信赖</a>
+                    <a href="javascript:void(0)" class="ft_link mei"><span class="icon"></span><span class="con">成功在美上市</span>股票代码NYSE:JMEI</a>
+                    <a href="javascript:void(0)" class="ft_link ma"><span class="icon"></span><span class="con">品牌防伪码</span>支持品牌官网验真</a>
+                    <a href="javascript:void(0)" class="ft_link tui"><span class="icon"></span><span class="con">30天无理由退货</span>只要不满意无理由退货</a>
+                    <a href="javascript:void(0)" class="ft_link bei"><span class="icon"></span><span class="con">百万用户口碑</span>帮你只选对的,不选贵的</a>
+                    <a href="javascript:void(0)" class="ft_link huo"><span class="icon"></span><span class="con">订单闪电发货</span>1.5小时订单急速出库</a>
+                    <a href="javascript:void(0)" class="ft_link jian"><span class="icon"></span><span class="con">打牌明星热荐</span>打造精致明星脸</a>
+                </div>
+            </div>
+            <div class="footer_top_fuwu">
+                <div class="footer_list box">
+                    <ul class="foot_linksa">
+                        <li class="foot_links">服务保障</li>
+                        <li><a href="">品牌真品防伪码</a></li>
+                        <li><a href="">正品保证</a></li>
+                        <li><a href="">30天无条件退货</a></li>
+                        <li><a href="">专属客服服务</a></li>
+                        <li><a href="">总裁邮箱ceo@jumei.com</a></li>
+                    </ul>
+                    <ul>
+                        <li class="foot_links">使用帮助</li>
+                        <li><a href="">新手指南</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">用户协议</a></li>
+                        <li><a href="">公示制度</a></li>
+                    </ul>
+                    <ul>
+                        <li class="foot_links">支付方式</li>
+                        <li><a href="">货到付款</a></li>
+                        <li><a href="">再线支付</a></li>
+                        <li><a href="">余额支付</a></li>
+                        <li><a href="">现金券支付</a></li>
+                    </ul>
+                    <ul>
+                        <li class="foot_links">配送方式</li>
+                        <li><a href="">包邮政策</a></li>
+                        <li><a href="">配送说明</a></li>
+                        <li><a href="">运费说明</a></li>
+                        <li><a href="">验货签收</a></li>
+                    </ul>
+                    <ul class="foot_linkse">
+                        <li class="foot_links">售后服务</li>
+                        <li><a href="">正品承诺</a></li>
+                        <li><a href="">售后咨询</a></li>
+                        <li><a href="">退货政策</a></li>
+                        <li><a href="">退货办理</a></li>
+                    </ul>
+                    <div class="footer_top_left">
+                        <ul class="foot_linksf">
+                            <li class="shouji foot_links">手机聚美</li>
+                            <li><span class="ft_pic1"></span></li>
+                            <li>下载移动客户端</li>
+                        </ul>
+                        <ul class="foot_linksg">
+                            <li class="weixin foot_links">聚美微信</li>
+                            <li><span  class="ft_pic2"></span></li>
+                            <li>聚美官方微信</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_by">
+            <div class="wodaiyan">
+                <span class="daiyan"></span>
+            </div>
+        </div>
+        <div class="footer_center">
+            <div class="box">
+                <a href="javascript:void(0)">关于聚美优品</a>
+                <a href="javascript:void(0)">INVESTOR RELATIONS</a>
+                <a href="javascript:void(0)">合作招商</a>
+                <a href="javascript:void(0)">获取更新</a>
+                <a href="javascript:void(0)">加入聚美</a>
+                <a href="javascript:void(0)">品牌合作专区</a>
+                <a href="javascript:void(0)">网站联盟</a>
+                <a href="javascript:void(0)">媒体报道</a>
+                <a href="javascript:void(0)">商务合作</a>
+            </div>
+        </div>
+        <div class="footer_con">
+            <div class="footer_bottom box">
+                <p class="footer_copy_con">
+                    COPYRIGHT © 2010-2018 北京创锐文化传媒有限公司 JUMEI.COM 保留一切权利。
+                    客服热线：400-123-8888
+                    <br>
+                    京公网安备 11010102001226 | <a href="javascript:void(0)">京ICP证111033号</a> | <a href="javascripy:void(0)">食品经营许可证</a>
+                    | <a href="">营业执照</a> | <a href="javascript:void(0)">ICP许可证</a> | <a href="javascript:void(0)">出版物经营许可证</a>
+                </p>
+                <p>
+                    <a href="javascript:void(0)" class="footer_copy_logo logo01"></a>
+                    <a href="javascript:void(0)" class="footer_copy_logo logo02"></a>
+                    <a href="javascript:void(0)" class="footer_copy_logo logo03"></a>
+                    <a href="javascript:void(0)" class="footer_copy_logo logo04"></a>
+                    <a href="javascript:void(0)" class="footer_copy_logo logo05"></a>
+                    <a href="javascript:void(0)" class="footer_logo6"></a>
+                </p>
+            </div>
+            
+            <script>function change_urlknet(eleId){var str= document.getElementById(eleId).href;var str1 =str.substring(0,(str.length-6));str1+=RndNum(6);document.getElementById(eleId).href=str1;}function RndNum(k){var rnd="";for (var i=0;i<k;i++){rnd+=Math.floor(Math.random()*10);}return rnd;}</script>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="script/shopping.js"></script>
+<script src="script/right_nav.js"></script>
+<script>
+</script>

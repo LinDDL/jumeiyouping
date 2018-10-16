@@ -97,27 +97,27 @@ $(function(){
     $(".btn_gotop").on("click",function(){
         $("html,body").scrollTop(0);
     })
-})
-//详情页的
-$(".auth_arrow").on("mouseenter",function(){
-    $(".dec").css({
-        "display":"block",
-    })
-})
-var timer=null;
-$(".auth_arrow").on("mouseleave",function(){
-    timer=setTimeout(function(){
+    //详情页的
+    $(".nav_store_name").on("mouseenter",function(){
         $(".dec").css({
-        "display":"none",
+            "display":"block",
         })
-    },500)
-    
-})
-$(".dec").on("mouseenter",function(){
-    clearTimeout(timer);
-})
-$(".dec").on("mouseleave",function(){
-    $(".dec").css({
-        "display":"none",
+    })
+    var timer=null;
+    $(".nav_store_name").on("mouseleave",function(){
+        timer=setTimeout(function(){
+            $(".dec").css({
+            "display":"none",
+            })
+        },500)
+        
+    })
+    $(".dec").on("mouseenter",function(){
+        clearTimeout(timer);
+    })
+    $(".dec").on("mouseleave",function(){
+        $(".dec").css({
+            "display":"none",
+        })
     })
 })
