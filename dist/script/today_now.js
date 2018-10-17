@@ -197,15 +197,15 @@
      renderPage:function(json1){
         //console.log(json1.result.wall.list);
         var json=json1.result.wall.list;
-        console.log(json)
+        //console.log(json)
          var html="";
          for( var i=0; i<json.length; i++){
              
                  html +=`
                                      <li class="deal_box">
                     <div class="img_box">
-                        <a href="#" class="img_box_href">
-                            <img src="${json[i].show.img}" alt="">                          
+                        <a href="javascript:void(0)" class="img_box_href">
+                            <img src="${json[i].show.img}"  id="img" alt="" data-id="${i}" >                          
                         </a>
                         <i class="deal_tags teg_list fangwei"></i>
                         <div class="commit_new">

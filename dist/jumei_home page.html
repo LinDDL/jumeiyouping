@@ -232,37 +232,37 @@
                 <div class="tab_box">
                     <div class="goods_top">
                         <div class="goods_top_list clearfix">
-                            <a href="javascript:void(0)">
+                            <a href="http://localhost:8001/Particulars_page%20.html">
                                 <img src="images/jd1.jpg" alt="">
                             </a>
-                            <a href="javascript:void(0)">
+                            <a href="http://localhost:8001/Particulars_page%20.html">
                                 <img src="images/jd2.jpg" alt="">
                             </a>
-                            <a href="javascript:void(0)">
+                            <a href="http://localhost:8001/Particulars_page%20.html">
                                 <img src="images/jd3.jpg" alt="">
                             </a>
-                            <a href="javascript:void(0)">
+                            <a href="http://localhost:8001/Particulars_page%20.html">
                                 <img src="images/jd4.jpg" alt="">
                             </a>
-                            <a href="javascript:void(0)">
+                            <a href="http://localhost:8001/Particulars_page%20.html">
                                 <img src="images/jd5.jpg" alt="">
                             </a>
-                            <a href="javascript:void(0)">
+                            <a href="http://localhost:8001/Particulars_page%20.html">
                                 <img src="images/jd6.jpg" alt="">
                             </a>
-                            <a href="javascript:void(0)">
+                            <a href="http://localhost:8001/Particulars_page%20.html">
                                 <img src="images/jd7.jpg" alt="">
                             </a>
-                            <a href="javascript:void(0)">
+                            <a href="http://localhost:8001/Particulars_page%20.html">
                                 <img src="images/jd8.jpg" alt="">
                             </a>
-                            <a href="javascript:void(0)">
+                            <a href="http://localhost:8001/Particulars_page%20.html">
                                 <img src="images/jd9.jpg" alt="">
                             </a>
-                            <a href="javascript:void(0)">
+                            <a href="http://localhost:8001/Particulars_page%20.html">
                                 <img src="images/jd10.jpg" alt="">
                             </a>
-                            <a href="javascript:void(0)">
+                            <a href="http://localhost:8001/Particulars_page%20.html">
                                 <img src="images/jd11.jpg" alt="">
                             </a>
                         </div>
@@ -315,7 +315,7 @@
                 <div class="tab_content">
                     <!-- <div class="tab_box">
                         <div class="today_tab_content">
-                            <a href="#" class="today_tab_link">
+                            <a href="javascript:void(0)" class="today_tab_link">
                                <img src="images/bk1.jpg" alt="" class="cart_img">
                                <span class="today_top_1"></span> 
                             </a>
@@ -327,7 +327,7 @@
                                         <span class="today_time"></span>
                                     </span>
                                 </div>
-                                <a href="#" class="product_title">
+                                <a href="javascript:void(0)" class="product_title">
                                     【香港直邮】什么？你还没用过SK-II护肤面膜（10片）？女人一生中至少也要经历一次SK-II护肤面膜的亲密接触！敷一次肌肤就嫩到你的前男友悔不当初！现男友爱你到死心塌地！富含30ml的精华液，让你皮肤满足的吃饱营养，每一个细胞都变得活力充盈！
                                 </a>
                                 <div class="product_price">
@@ -369,7 +369,7 @@
             <ul class="deal_list clearfix" id="today_now_goods">
                 <!-- <li class="deal_box">
                     <div class="img_box">
-                        <a href="#" class="img_box_href">
+                        <a href="javascript:void(0)" class="img_box_href">
                             <img src="http://p3.jmstatic.com/product/000/032/32923_std/32923_350_350.jpg" alt="">                          
                         </a>
                         <i class="deal_tags teg_list fangwei"></i>
@@ -389,7 +389,7 @@
                         </div>
                     </div>
                     <div class="add_cart_box all_cart_wrap"><a href="javascript:void(0)" class="add_cart all_cart">加入购物车</a></div>
-                    <a href="#" class="clearfix">
+                    <a href="javascript:void(0)" class="clearfix">
                         <div class="deal_detail">
                             <p class="title"><span class="pink">【官方授权】</span>欣兰黑里透白冻膜500g，肌肤“冻”出干净亮白！</p>
                             <div class="in_box">
@@ -414,11 +414,11 @@
     <div class="cosmetics box ban">
         <div class="cosmetics_floor">
             <h2 class="floor_head">
-                <a href="#" class="floor-view-more">查看更多&gt;&gt;</a>
+                <a href="javascript:void(0)" class="floor-view-more">查看更多&gt;&gt;</a>
             </h2>
             <div class="sc_content clearfix">
                 <div class="sc1">
-                    <a href="#">
+                    <a href="javascript:void(0)">
                         <img src="images/cs1.jpg" alt="">
                     </a>
                 </div>
@@ -634,7 +634,7 @@
         <div class="login_box">
             <div class="actor_box">
                 <p class="ac_box"><img src="images/actor.jpg" alt=""></p>
-                <p class="ac_text">你好！请&nbsp;<a href="#">登录</a>&nbsp;|&nbsp;<a href="#">注册</a></p>
+                <p class="ac_text">你好！请&nbsp;<a href="javascript:void(0)">登录</a>&nbsp;|&nbsp;<a href="javascript:void(0)">注册</a></p>
             </div>
             <div class="login_btn_box">
                 <a href="" class="my_order">我的订单</a>
@@ -651,3 +651,22 @@
 <script src="script/tab_box.js"></script>
 <script src="script/today_now.js"></script>
 <script src="script/main.js"></script>
+<script src="script/common.js"></script>
+<script>
+    var oList = document.getElementById("today_now_goods");
+       // 委托;
+       
+       oList.onclick = function(evt){
+           var e = evt || window.event;
+           var img = document.querySelectorAll("img");
+           var imgArray = Array.from(img);
+           var target = e.target || e.srcElement;
+        //    console.log(imgArray);   
+            if(imgArray.indexOf(target) != -1){
+                // 页面跳转;
+                // 先要储存cookie;
+                cookie("goodsId",target.getAttribute("data-id"));
+                location.href = "detial.html";
+            }
+       }
+</script>
