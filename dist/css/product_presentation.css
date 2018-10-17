@@ -94,11 +94,11 @@ img:hover {
   bottom: 0; }
 
 .jqZoomPup {
+  top: 0;
+  left: 0;
   width: 122.5px;
   height: 122.5px;
   visibility: visible;
-  top: 99px;
-  left: 127px;
   display: none;
   z-index: 2;
   position: absolute;
@@ -106,7 +106,8 @@ img:hover {
   -moz-opacity: .5;
   -khtml-opacity: .5;
   filter: alpha(Opacity=50);
-  background: url(../images/zoompup.png); }
+  background: url(../images/zoompup.png);
+  cursor: move; }
 
 .zoomdiv {
   display: none;
@@ -169,6 +170,10 @@ img:hover {
   width: 75px;
   height: 12px;
   overflow: hidden; }
+  .mall_koubei_star i {
+    display: inline-block;
+    height: 12px;
+    background-repeat: repeat; }
 
 .mall_koubei_num a, .mall_koubei_rate a, .mall_sale_rules .sale_rules_m, .mall_sale_rules .sale_rules_r {
   color: #ed145b; }
