@@ -164,15 +164,15 @@
   display: inline;
   background: #fff;
   padding-bottom: 10px; }
-  .item_wrap_right .s_l_pic {
+  .item_wrap_right .t_pic {
     width: 282px;
     height: 282px;
     background: #fff; }
-    .item_wrap_right .s_l_pic a {
+    .item_wrap_right .t_pic a {
       display: block;
       overflow: hidden;
       padding: 12px; }
-  .item_wrap_right .s_l_name {
+  .item_wrap_right .t_name {
     width: 260px;
     height: 35px;
     font-size: 12px;
@@ -180,15 +180,15 @@
     font-family: 宋体;
     padding: 10px 10px 0px;
     overflow: hidden; }
-    .item_wrap_right .s_l_name a {
+    .item_wrap_right .t_name a {
       color: #444;
       text-decoration: none; }
-    .item_wrap_right .s_l_name .disc {
+    .item_wrap_right .t_name .disc {
       color: #ed145a;
       font-weight: 700; }
-    .item_wrap_right .s_l_name .pink {
+    .item_wrap_right .t_name .pink {
       color: #ed145b; }
-  .item_wrap_right .s_l_view_bg {
+  .item_wrap_right .t_view {
     height: 32px;
     margin-top: 2px;
     position: relative;
