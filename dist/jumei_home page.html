@@ -96,18 +96,34 @@
                 </ul>
             </div>
             <div class="car_box">
-                <a href="javascript:void(0)" class="car_link">
+                <div class="car_link">
                     <img src="http://p0.jmstatic.com/assets/cart.gif" alt="" class="car_gif">
                     <span class="text">去购物车结算</span>
-                    <i class="icon_arrow icon_arrow_down"></i>
-                    <div class="carContent">
+                    <span class="totle" style="">0</span>
+                    <i class="icon_arrow icon_arrow_down"></i> 
+                    <ul class="goods_list">
                         <i class="car-icons"></i>
-                        <div class="carContent_zero">
+                        <li class="carContent_zero">
                             购物车中还没有东西，<br>
                             快去挑选心爱的商品吧！
-                        </div>
-                    </div>
-                </a>
+                        </li>
+                        <!-- <li class="btn_cart">
+                            <div class="cart_con_over cart_con_single">
+                                <div class="single_pic">
+                                    <a href="javascript:void(0)">
+                                        <img src="https://p2.jmstatic.com/product/002/222/2222783_std/2222783_60_60.jpg">
+                                    </a>
+                                </div>
+                                <div class="single_info">
+                                    <a href="javascript:void(0)" class="name">Mistine小草莓变色润唇膏（2支）</a>
+                                    <span class="price">￥21.90</span>
+                                    <span class="price_plus"> x </span>
+                                    <span class="price_num">1</span>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul> 
+                </div>
             </div>
         </div>
     </div>
@@ -213,7 +229,7 @@
     </div>
     <!-- 首页轮播广告位 -->
     <div class="swiper-container swiper-container-horizontal" id="swiper-container1">
-        <ul class="swiper-wrapper">
+        <ul class="swiper-wrapper" id="swiper_box">
             <li class="swiper-slide one-slide swiper-slide-prev "><a href="javascript:void(0)"></a></li>
             <li class="swiper-slide two-slide swiper-slide-active"><a href="javascript:void(0)"></a></li>
             <li class="swiper-slide three-slide swiper-slide-active"><a href="javascript:void(0)"></a></li>
@@ -388,7 +404,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="add_cart_box all_cart_wrap"><a href="javascript:void(0)" class="add_cart all_cart">加入购物车</a></div>
+                    <div class="add_cart_box all_cart_wrap" id="button"><a href="javascript:void(0)" class="add_cart all_cart">加入购物车</a></div>
                     <a href="javascript:void(0)" class="clearfix">
                         <div class="deal_detail">
                             <p class="title"><span class="pink">【官方授权】</span>欣兰黑里透白冻膜500g，肌肤“冻”出干净亮白！</p>
@@ -599,7 +615,7 @@
         <div class="main_panel">
             <ul class="panel_top">
                 <li class="btn_login"><a href="javascript:void(0)"><i></i></a></li>
-                <li class="btn_cart"><a href="javascript:void(0)"><i></i><em class="cars">购物车</em><em class="car_count">0</em></a></li>
+                <li class="btn_cart"><a href="localhost:8001/gouwuche.html"><i></i><em class="cars">购物车</em><em class="car_count">0</em></a></li>
                 <li class="btn_asset btn_li">
                     <a href="javascript:void(0)"><i></i></a>
                     <div class="tool_text">我的财产<s class="icon_arrow_right_black"></s></div>
@@ -653,3 +669,5 @@
 <script src="script/main.js"></script>
 <script src="script/common.js"></script>
 <script src="script/save_cookie.js"></script>
+<script src="script/jquery.cookie.js"></script>
+<script src="script/gouwuche.js"></script>

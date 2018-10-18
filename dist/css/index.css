@@ -8,6 +8,73 @@ img:hover {
 em, i {
   font-style: normal; }
 
+.btn_cart {
+  max-height: 234px;
+  overflow: auto;
+  margin-bottom: -1px;
+  width: 300px; }
+
+.cart_con_single {
+  height: 61px;
+  padding: 8px 12px;
+  border-bottom: 1px dashed #d3d3d3;
+  overflow: hidden; }
+
+.single_pic {
+  width: 62px;
+  height: 62px;
+  float: left;
+  overflow: hidden; }
+
+.single_pic a {
+  border: 1px solid #f5f5f5;
+  width: 60px;
+  height: 60px;
+  display: inline-block; }
+
+.single_pic img {
+  width: 60px;
+  height: 60px;
+  display: inline-block; }
+
+.single_info {
+  width: 187px;
+  padding-left: 10px;
+  float: left;
+  overflow: hidden; }
+
+.single_info .name {
+  display: block;
+  height: 36px;
+  line-height: 18px;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  text-decoration: none;
+  color: #333; }
+
+.single_info .price {
+  color: #eb155b;
+  font-family: arial; }
+
+.totle {
+  width: 27px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  position: absolute;
+  background: url(../images/header_sprites1.png) no-repeat;
+  background-position: 0 -69px;
+  top: -25px;
+  font-family: arial;
+  text-align: center;
+  left: 26px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-size: 100%; }
+
 /* login and register */
 .headerTop {
   width: 100%;
@@ -307,6 +374,9 @@ em, i {
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis; }
 
+li {
+  list-style: none; }
+
 .search_results div label {
   float: right;
   margin-right: 5px;
@@ -347,7 +417,7 @@ em, i {
   padding-left: 6px;
   background: #f8f8f8; }
 
-.carContent {
+.goods_list {
   position: absolute;
   top: 33px;
   z-index: 2;
@@ -376,7 +446,7 @@ em, i {
   top: -5px;
   right: 0; }
 
-.car_link:hover .carContent_zero, .car_link:hover .car-icons {
+.car_link:hover .car-icons {
   display: block; }
 
 .car_link:hover .text {
@@ -461,7 +531,6 @@ em, i {
 .hdBottom {
   height: 38px;
   clear: both;
-  /* width: 100%; */
   position: relative; }
   .hdBottom .nav {
     width: auto;
@@ -895,7 +964,7 @@ em, i {
       width: 330px;
       box-shadow: 2px 2px 4px #e3e3e3;
       padding: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       height: 450px;
       position: relative; }
       .today_new_deal .today_deal_title .today_deal_tips .deal_box .img_box_href {
@@ -931,7 +1000,6 @@ em, i {
   background-position: -82px 0; }
 
 .commit_new {
-  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1020,7 +1088,7 @@ em, i {
       height: 45px; }
 
 .price_box .pnum, .price_box em {
-  font-size: 22px;
+  font-size: 18px;
   color: #ed145b;
   font-family: Arial,Helvetica,sans-serif;
   float: left;
@@ -1070,7 +1138,8 @@ em, i {
   position: absolute;
   top: 10px;
   right: 10px;
-  display: none; }
+  padding: 0;
+  border: 0px; }
 
 .add_cart, .deal_tips, .cate_look {
   display: block;

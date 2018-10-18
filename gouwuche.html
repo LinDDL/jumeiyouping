@@ -32,7 +32,7 @@
                     <img class="cart_empty_logo" src="http://s0.jmstatic.com/assets/images/jumei/cart_v2/empty_icon.jpg" alt=""> 
                     <div class="cart_empty_right">
                          <h2>您的购物车中没有商品，请先去挑选心爱的商品吧！</h2> 
-                         <p class="cart_empty_backtip"> 您可以 <a class="btn" href="javascript:void(0)">  返回首页  </a> 挑选喜欢的商品,或者 </p> 
+                         <p class="cart_empty_backtip"> 您可以 <a class="btn" href="localhost:8001/jumei_home page.html">  返回首页  </a> 挑选喜欢的商品,或者 </p> 
                     </div>
                 </div>
                 <div id="content">
@@ -148,3 +148,85 @@
     </div>
 </body>
 </html>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="script/common.js"></script>
+<script>
+        // var oImg = document.getElementById("product_Simg");
+        // var oP = document.getElementById("title");
+        function Mygoods(){}
+        $.extend(Mygoods.prototype,{
+            //初始化
+            init:function(){
+                //当前页数
+                this.page=1;
+                this.loadJson()     //返回值是deferred对象（promise前身）
+                .done(function(res){
+                    // deferred 的 done 回调 this指向的都是 jquery 对象本身
+                    this.renderPage(res);
+                })
+                // this.bindEvent();
+
+            },
+            //加载数据
+            loadJson:function(){
+                var opt = {
+                    // url:"http://www.wookmark.com/api/json/popular",
+                    url:"https://list.mogujie.com/search",
+                    dataType:"jsonp",
+                    data:{page:this.page},
+                    //this  ===>指向实例化对象
+                    context:this
+                }
+                return $.ajax(opt);
+                
+                
+            },
+            renderPage:function(json1){
+                var json=json1.result.wall.list;
+                console.log(json)
+                var oImg = document.getElementById("product_Simg");
+                var oTitle = document.getElementById("title");
+                var otImg = document.querySelector("#my");
+                var oBimg = document.querySelector("#product_Bimg");
+                //console.log(otImg)
+                // var res = "";
+                var cookie = $.cookie("goodsId");
+                var cookieArray = JSON.parse(cookie);
+                var html;
+                for(var j = 0 ; j < json.length ; j ++){
+                    if(cookieArray[i].iid == this.json[j].iid){
+                        html += `
+                        <li class="btn_cart">
+                            <div class="cart_con_over cart_con_single">
+                                <div class="single_pic">
+                                    <a href="javascript:void(0)">
+                                        <img src="${this.json[j].show.img}">
+                                    </a>
+                                </div>
+                                <div class="single_info">
+                                    <a href="javascript:void(0)" class="name">${this.json[j].title}</a>
+                                    <span class="price">${this.json[j].price}</span>
+                                    <span class="price_plus"> x </span>
+                                    <span class="price_num">${cookieArray[i].num}</span>
+                                </div>
+                            </div>
+                                `;
+                        break;
+                    }
+
+                }
+
+            //     if(cookie("goodsId")){
+            //         res=cookie("goodsId");//去cookie的velue值
+            //         // console.log(cookie("goodsId"));
+            //         oImg.src =json[res].show.img;
+            //         otImg.src =json[res].show.img;
+            //         oBimg.src =json[res].show.img;
+            //         oTitle.innerHTML = json[res].title;
+            //     }
+            }
+        })
+        var mygoods = new Mygoods();
+        mygoods.init();
+
+    </script> -->

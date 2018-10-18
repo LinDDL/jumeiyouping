@@ -223,7 +223,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="add_cart_box all_cart_wrap"><a href="javascript:void(0)" class="add_cart all_cart">加入购物车</a></div>
+                    <button class="add_cart_box all_cart_wrap" rel-id="${json[i].iid}" ><a href="javascript:void(0)" class="add_cart all_cart" rel-id="${json[i].iid}">加入购物车</a></button>
                     <a href="#" class="clearfix">
                         <div class="deal_detail">
                             <p class="title"><span class="pink">${json[i].title}</p>
@@ -236,7 +236,7 @@
                                 </div>
                                 <div class="timer_box">
                                     <div class="time_box" id="time_box"></div>
-                                    <div class="num_box">销量: <span class="buy_num">${json[i].sale}}</span> |</div>
+                                    <div class="num_box">销量: <span class="buy_num">${json[i].sale}</span> |</div>
                                 </div>
                             </div>
                         </div>

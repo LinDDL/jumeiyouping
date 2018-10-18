@@ -58,7 +58,7 @@ gulp.task("es6",()=>{
     .pipe(gulp.dest("dist/es6"));
 })
 gulp.task("script", ()=>{
-    return gulp.src(["script/*.js","!script/swiper.js","!script/tab_box.js","!script/today_now.js","!script/jumei_login_focus.js","!script/jumei_login_more.js","!script/jumei_login_success.js","!particulars_page.js","!script/product.js"])
+    return gulp.src(["script/*.js","!script/swiper.js","!script/tab_box.js","!script/today_now.js","!script/jumei_login_focus.js","!script/jumei_login_more.js","!script/jumei_login_success.js","!particulars_page.js","!script/product.js","!script/gouwuche.js"])
     .pipe(concat("main.js"))
     .pipe(uglify())
     .pipe(gulp.dest("dist/script"));
@@ -84,35 +84,35 @@ gulp.task("css", ()=>{
 })
 
 gulp.task("sass", () =>{
-    return gulp.src(["sass/*.scss","!sass/login.sass","!sass/res.scss","!particulars_page.scss"])
+    return gulp.src(["sass/*.scss","!sass/login.sass","!sass/res.scss","!particulars_page.scss","!product_presentation.scss","!gouwuche.scss"])
            .pipe(sass().on("error",sass.logError))
            .pipe(gulp.dest("dist/css"))
 })
-gulp.task("sass", () =>{
-    return gulp.src(["sass/login.scss"])
-           .pipe(sass().on("error",sass.logError))
-           .pipe(gulp.dest("dist/css"))
-})
-gulp.task("sass", () =>{
-    return gulp.src(["sass/res.scss"])
-           .pipe(sass().on("error",sass.logError))
-           .pipe(gulp.dest("dist/css"))
-})
-gulp.task("sass", () =>{
-    return gulp.src(["sass/particulars_page.scss"])
-           .pipe(sass().on("error",sass.logError))
-           .pipe(gulp.dest("dist/css"))
-})
-gulp.task("sass", () =>{
-    return gulp.src(["sass/product_presentation.scss"])
-           .pipe(sass().on("error",sass.logError))
-           .pipe(gulp.dest("dist/css"))
-})
-gulp.task("sass", () =>{
-    return gulp.src(["sass/gouwuche.scss"])
-           .pipe(sass().on("error",sass.logError))
-           .pipe(gulp.dest("dist/css"))
-})
+// gulp.task("sass", () =>{
+//     return gulp.src(["sass/login.scss"])
+//            .pipe(sass().on("error",sass.logError))
+//            .pipe(gulp.dest("dist/css"))
+// })
+// gulp.task("sass", () =>{
+//     return gulp.src(["sass/res.scss"])
+//            .pipe(sass().on("error",sass.logError))
+//            .pipe(gulp.dest("dist/css"))
+// })
+// gulp.task("sass", () =>{
+//     return gulp.src(["sass/particulars_page.scss"])
+//            .pipe(sass().on("error",sass.logError))
+//            .pipe(gulp.dest("dist/css"))
+// })
+// gulp.task("sass", () =>{
+//     return gulp.src(["sass/product_presentation.scss"])
+//            .pipe(sass().on("error",sass.logError))
+//            .pipe(gulp.dest("dist/css"))
+// })
+// gulp.task("sass", () =>{
+//     return gulp.src(["sass/gouwuche.scss"])
+//            .pipe(sass().on("error",sass.logError))
+//            .pipe(gulp.dest("dist/css"))
+// })
 
 
 

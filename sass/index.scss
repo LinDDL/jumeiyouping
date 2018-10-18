@@ -2,6 +2,75 @@
 @import "_function.scss";
 img:hover{opacity: .8;}
 em,i{font-style: normal;}
+// 购物车
+.btn_cart {
+    max-height: 234px;
+    overflow: auto;
+    margin-bottom: -1px;
+    width: 300px;
+}
+.cart_con_single {
+    height: 61px;
+    padding: 8px 12px;
+    border-bottom: 1px dashed #d3d3d3;
+    overflow: hidden;
+}
+.single_pic {
+    width: 62px;
+    height: 62px;
+    float: left;
+    overflow: hidden;
+}
+.single_pic a {
+    border: 1px solid #f5f5f5;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+.single_pic img {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+.single_info {
+    width: 187px;
+    padding-left: 10px;
+    float: left;
+    overflow: hidden;
+}
+.single_info .name {
+    display: block;
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    text-decoration: none;
+    color: #333;
+}
+.single_info .price {
+    color: #eb155b;
+    font-family: arial;
+}
+.totle {
+    width: 27px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    position: absolute;
+    background: url(../images/header_sprites1.png) no-repeat;
+    background-position: 0 -69px;
+    top: -25px;
+    font-family: arial;
+    text-align: center;
+    left: 26px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-size: 100%;
+}
+
 /* login and register */
 .headerTop{
     width: 100%;
@@ -305,6 +374,9 @@ em,i{font-style: normal;}
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
 }
+li{
+    list-style: none;
+}
 .search_results div label{
     float: right;
     margin-right: 5px;
@@ -345,7 +417,7 @@ em,i{font-style: normal;}
     padding-left: 6px;
     background: #f8f8f8;
 }
-.carContent{
+.goods_list{
     position: absolute;
     top: 33px;
     z-index: 2;
@@ -374,7 +446,7 @@ em,i{font-style: normal;}
     top: -5px;
     right: 0;
 }
-.car_link:hover .carContent_zero,.car_link:hover .car-icons{
+.car_link:hover .car-icons{
     display: block;
 }
 .car_link:hover .text{
@@ -1012,7 +1084,7 @@ em,i{font-style: normal;}
     background-position: -82px 0;
 }
 .commit_new{
-    display:none;
+    // display:none;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1116,7 +1188,7 @@ em,i{font-style: normal;}
 }
 .price_box {
     .pnum, em {
-        font-size: 22px;
+        font-size: 18px;
         color: #ed145b;
         font-family: Arial,Helvetica,sans-serif;
         float: left;
@@ -1172,8 +1244,10 @@ em,i{font-style: normal;}
     position: absolute;
     top: 10px;
     right: 10px;
-    display: none;
+    // display: none;
     // z-index: 1;
+    padding: 0;
+    border:0px;
 }
  .add_cart, .deal_tips, .cate_look {
     display: block;
