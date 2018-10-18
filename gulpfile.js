@@ -108,4 +108,11 @@ gulp.task("sass", () =>{
            .pipe(sass().on("error",sass.logError))
            .pipe(gulp.dest("dist/css"))
 })
+gulp.task("sass", () =>{
+    return gulp.src(["sass/gouwuche.scss"])
+           .pipe(sass().on("error",sass.logError))
+           .pipe(gulp.dest("dist/css"))
+})
+
+
 

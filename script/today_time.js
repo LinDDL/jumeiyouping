@@ -2,7 +2,7 @@ $(function(){
     function foo(){
         var date=new Date();
         var start=date.getTime();
-        var enddate=new Date("2018-10-18 00:00:00");
+        var enddate=new Date("2018-10-20 00:00:00");
         var end=enddate.getTime();
         var lastTime=end-start;
     

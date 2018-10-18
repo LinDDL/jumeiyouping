@@ -652,21 +652,4 @@
 <script src="script/today_now.js"></script>
 <script src="script/main.js"></script>
 <script src="script/common.js"></script>
-<script>
-    var oList = document.getElementById("today_now_goods");
-       // 委托;
-       
-       oList.onclick = function(evt){
-           var e = evt || window.event;
-           var img = document.querySelectorAll("img");
-           var imgArray = Array.from(img);
-           var target = e.target || e.srcElement;
-        //    console.log(imgArray);   
-            if(imgArray.indexOf(target) != -1){
-                // 页面跳转;
-                // 先要储存cookie;
-                cookie("goodsId",target.getAttribute("data-id"));
-                location.href = "detial.html";
-            }
-       }
-</script>
+<script src="script/save_cookie.js"></script>
