@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/gouwuche.css">
+    <title>购物车</title>
+</head>
+<body>
+    <div style="background:white">
+        <div class="head_one">
+            <div class="user_box">
+                <span>聚美优品欢迎你，</span>
+                <a href="http://localhost:8001/jumei_login.html">登录</a>
+                <a href="http://localhost:8001/jumei_res.html">免注册</a>
+            </div>
+            
+        </div>
+        <div class="logo_box">
+            <h1 class="logo">
+                <a href="javescript:void(0)" id="home">
+                    <img src="http://f0.jmstatic.com/static_cart/dist/20180823_1/images/cart_logo.jpg?v=1" alt="化妆品团购">
+                </a>
+            </h1>
+        </div>
+        <div class="cargoods">
+            <div id="group_show">
+                <div class="content_header clearfix">  </div>
+                <div class="cart_empty clearfix"> 
+                    <img class="cart_empty_logo" src="http://s0.jmstatic.com/assets/images/jumei/cart_v2/empty_icon.jpg" alt=""> 
+                    <div class="cart_empty_right">
+                         <h2>您的购物车中没有商品，请先去挑选心爱的商品吧！</h2> 
+                         <p class="cart_empty_backtip"> 您可以 <a class="btn" href="javascript:void(0)">  返回首页  </a> 挑选喜欢的商品,或者 </p> 
+                    </div>
+                </div>
+                <div id="content">
+                    <div class="content_head">
+                        <div class="top_banner"> 
+                            <ul class="header_icons clearfix"> 
+                                <li> 
+                                    <span> <i class="icon_zhenpin header_icon png"></i> 真品防伪码 </span> 
+                                </li> 
+                                <li> 
+                                    <span> <i class="icon_tuihuo header_icon png"></i> 30天无条件退货 </span> 
+                                </li>
+                                <li> <span> <i class="icon_baoyou header_icon png"></i> 美妆满2件或299元包邮 </span> 
+                                </li> 
+                            </ul> 
+                        </div>
+                    </div>
+                    <table class="cart_group_item  cart_group_item_product">
+                        <thead>
+                            <tr>
+                                <th class="cart_overview">
+                                    <div class="cart_group_header"> 
+                                        <input type="checkbox" class="js_group_selector cart_group_selector" checked="checked">
+                                    <h2>  聚美优品发货  </h2> </div>
+                                </th>
+                                <th class="cart_price">聚美价（元）</th>
+                                <th class="cart_num">数量</th>
+                                <th class="cart_total">小计（元）</th>
+                                <th class="cart_option">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cart_item ">
+                                <td valign="top">
+                                    <div class="cart_item_desc clearfix"> 
+                                        <input type="checkbox" class="js_item_selector cart_item_selector"  checked="'checked'/">
+                                        <div class="cart_item_desc_wrapper">
+                                            <a class="cart_item_pic" href=""> 
+                                                <img src="https://p2.jmstatic.com/product/002/222/2222783_std/2222783_60_60.jpg" > 
+                                                    <span class="sold_out_pic png"></span> </a> <span class="cart_item_global">[极速免税]</span> 
+                                                    <a class="cart_item_link" href="">Mistine小草莓变色润唇膏（2支）</a>
+                                            <p class="sku_info"> 容量：<span class="cart_item_capacity">1.7g*2</span> </p>
+                                            <div class="sale_info clearfix"> </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cart_item_price">
+                                        <p class="jumei_price">21.90</p>
+                                        <p class="market_price ">49.00</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cart_item_num ">
+                                        <div class="item_quantity_editer clearfix" > <span class="decrease_one disabled ">-</span> 
+                                            <input class="item_quantity" type="text" value="1"> <span class="increase_one ">+</span> </div>
+                                        <div class="item_shortage_tip"> </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cart_item_total">
+                                        <p class="item_total_price">21.90</p>
+                                        <p>省 <span class="item_saved_price">27.10</span></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="cart_item_option">
+                                        <a class="icon_small delete_item png" href="javascript:void(0)" title="删除"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan=" 5 "> 商品金额： <span class="group_total_price">¥0.00</span> </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="common_handler">
+                        <div class="right_handler">
+                                共 <span class="total_amount"> 0 </span> 
+                                &nbsp;件商品 &nbsp;&nbsp; 商品应付总额：
+                                <span class="total_price">¥0.00</span> 
+                                <a id="go_to_order" class="btn  disabled" href="javascript:;">去结算</a> 
+                        </div> 
+                        <label for="js_all_selector" class="cart_all_selector_wrapper"> 
+                            <input type="checkbox" id="js_all_selector" class="js_all_selector all_selector"> 全选 
+                        </label>			
+                        <a class="go_back_shopping" href="javascript:void(0)">继续购物</a> 
+                        <span class="seperate_line">|</span> 
+                        <a class="clear_cart_all" href="">清空选中商品</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="foot_box">
+                <p class="footer_copy_con">
+                    © 2013 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888 <br>
+                    京公网安备 11010102001226 | <a href="javascript:void(0)">京ICP证111033号</a> | <a href="javascript:void(0)">食品流通许可证 SP1101051110165515（1-1）</a>
+                    | <a href="javascript:void(0)">营业执照</a>
+                </p>
+                <p>
+                    <a href="javascript:void(0)" class="footer_copy_logo logo01"></a>
+                    <a href="javascript:void(0)" class="footer_copy_logo logo02"></a>
+                    <a href="javascript:void(0)" class="footer_copy_logo logo03"></a>
+                    <a href="javascript:void(0)" class="footer_copy_logo logo04"></a>
+                    <a href="javascript:void(0)" class="footer_copy_logo logo05"></a>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
