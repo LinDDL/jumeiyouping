@@ -615,7 +615,9 @@
         <div class="main_panel">
             <ul class="panel_top">
                 <li class="btn_login"><a href="javascript:void(0)"><i></i></a></li>
-                <li class="btn_cart"><a href="localhost:8001/gouwuche.html"><i></i><em class="cars">购物车</em><em class="car_count">0</em></a></li>
+                <li class="btn_cart this_car">
+                    <a href="localhost:8001/gouwuche.html"><i></i><em class="cars">购物车</em><em class="car_count">0</em></a>
+                </li>
                 <li class="btn_asset btn_li">
                     <a href="javascript:void(0)"><i></i></a>
                     <div class="tool_text">我的财产<s class="icon_arrow_right_black"></s></div>
@@ -658,6 +660,57 @@
             </div>
             <s class="icon_arrow_white"></s>
             <a href="javascript:void(0)" class="close_btn"></a>
+        </div>
+        <div class="ibar_plugin ibar_cart_content" id="iBarCart">
+            <div class="ibar_plugin_title">
+                <span class="ibar_plugin_name">购物车</span>
+                <a href="javascript:void(0)" class="close_btn"></a>
+            </div>
+            <div class="ibar_plugin_content" style="height: 633px; overflow-y: auto;">
+                <div class="ibar_cart_group_container" style="position: relative;">
+                    <div class="ibar_cart_group ibar_cart_product">
+                        <div class="ibar_cart_group_header clearfix">
+                            <span class="ibar_cart_group_title">聚美优品</span>
+                            <span class="ibar_cart_group_shop ibar_text_ellipsis"></span>
+                            <span class="ibar_cart_group_baoyou ibar_pink"></span>
+                        </div>
+                        <ul class="ibar_cart_group_items">
+                            <li class="ibar_cart_item clearfix">
+                                <div class="ibar_cart_item_pic">
+                                    <a target="_blank" title="中国•一叶子嫩茉莉补水保湿洁面啫喱 100g" href="http://mall.jumei.com/product_4128674.html?from=ibar_cart">
+                                        <img src="https://p2.jmstatic.com/product/004/128/4128674_std/4128674_100_100.jpg" alt="中国•一叶子嫩茉莉补水保湿洁面啫喱 100g">
+                                        <span class="ibar_cart_item_tag png"></span>
+                                    </a>
+                                </div>
+                                <div class="ibar_cart_item_desc">
+                                    <span class="ibar_cart_item_name_wrapper">
+                                        <span class="ibar_cart_item_global">[极速免税]</span>
+                                        <a class="ibar_cart_item_name" target="_blank" title="中国•一叶子嫩茉莉补水保湿洁面啫喱 100g" href="javascript:void(0)">中国•一叶子嫩茉莉补水保湿洁面啫…</a>
+                                    </span>
+                                    <div class="ibar_cart_item_sku ibar_text_ellipsis">
+                                        <span title=" 100g">型号： 100g</span>
+                                    </div>
+                                <div class="ibar_cart_item_price ibar_pink">
+                                    <span class="unit_price">￥85</span>
+                                    <span class="unit_plus"> x </span>
+                                    <span class="ibar_cart_item_count">1</span>
+                                </div>
+                            </div>
+                            </li>
+                    
+                        </ul>
+                    </div>
+                </div>
+                <div class="ibar_cart_handler ibar_cart_handler_attached">
+                    <div class="ibar_cart_handler_header clearfix">
+                        <span class="ibar_cart_handler_header_left">
+                            共 <span class="ibar_cart_total_quantity ibar_pink">2</span> 
+                            件商品</span>
+                            <span class="ibar_cart_total_price ibar_pink">￥106</span>
+                    </div>
+                    <a class="ibar_cart_go_btn" href="javascript:void(0)">去购物车结算</a>
+                </div>
+            </div>
         </div>
     </div>
 <script src="//localhost:35729/livereload.js?snipver=1" async="" defer=""></script></body>

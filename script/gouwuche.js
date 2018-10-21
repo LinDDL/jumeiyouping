@@ -21,7 +21,7 @@ $.extend(ShopCar.prototype,{
     },
     bindEvent:function(){
         $("#today_now_goods").on("click","button",this.addCar.bind(this));
-        $(".car_box>div").on("mouseenter",this.showList.bind(this));
+        $(".car_box").on("mouseenter",this.showList.bind(this));
         $(".car_box>div").on("mouseleave",function(){
             $(".goods_list").children().remove();
         });
