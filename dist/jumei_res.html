@@ -31,32 +31,47 @@
                     <h1><strong>用户注册</strong></h1>
                 </div>
                 <form id="phone" method="post">
-                    <div class="line">
+                    <div class="line" id="number">
                         <div class="textbox_ui">
                             <input type="text" id="username" placeholder="手机号">
                             <div class="focus_text">请输入11位手机号码</div>
+                            <div class="invalid">
+                                <i></i>
+                                <div class="msg">您输入的手机号码格式有误，需为 11 位数字格式</div>
+                            </div>
+                            <i class="valid the_one"></i>
                         </div>
                     </div>
                     <div class="line verityWrap">
                         <div class="textbox_ui sms_verify_wrapper">
                             <input type="text" id="mobile_verify" placeholder="短信校验码" >
                             <div class="focus_text">请输入6位短信校验码</div>
-                        </div>
                         <a href="javascript:void(0);" id="getPhoneCode" class="phonecode"><strong>获取短信校验码</strong></a>
+                        </div>
                     </div>
-                    <div class="line">
+                    <div class="line" id="pword">
                         <div class="textbox_ui">
                             <input type="password" placeholder="密码" id="password">
                             <div class="focus_text">
                                 <p class="default">6-16个字符，建议使用字母加数字或符号组合</p>
                             </div>
+                            <div class="invalid">
+                                <i></i>
+                                <div class="msg">为了您的账号安全，密码长度只能在 6-16 个字符之间</div>
+                            </div>
+                            <i class="valid the_two"></i>
                         </div>
                     </div>
                    
-                    <div class="line">
+                    <div class="line" id="pword2">
                         <div class="textbox_ui">
                             <input type="password" id="password2" placeholder="重复密码">
                             <div class="focus_text">请再次输入密码</div>
+                            <div class="invalid">
+                                <i></i>
+                                <div class="msg">两次密码输入不一致，请重新输入</div>
+                            </div>
+                            <i class="valid the_three"></i>
                         </div>
                     </div>
                     <div class="act" style="margin-left: 0px;">
@@ -94,19 +109,5 @@
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script>
-    var oBtn = document.getElementById("btn");
-    var oUser = document.getElementById("username");
-    var oPwd = document.getElementById("password");
-    $("#btn").on("click",function(){console.log(oUser.value,oPwd.value)
-        $.ajax({
-            url:"http://localhost:8001/proxy/localhost/php/res.php",
-            type:"GET",
-            data:`username=${oUser.value}&password=${oPwd.value}`,
-            datatype:"html",
-            success:function(res){
-                alert(res);
-            }
-        }) 
-    })
-</script>
+<script src="script/res.js"></script>
+<script src="script/login.js"></script>

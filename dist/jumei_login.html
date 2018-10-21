@@ -57,7 +57,7 @@
                             <div class="focus_text">请输入登录名，登录名可能是您的手机号、邮箱或用户名</div>
                         </div>
                         <div class="the_box the_o">
-                            <input type="text" placeholder="密码" class="inpu password" id="password">   
+                            <input type="password" placeholder="密码" class="inpu password" id="password">   
                             <div class="focus_text">请输入您的密码，您的密码可能为字母、数字或符号的组合</div>
                         </div>
                         <div id="slider">
@@ -117,15 +117,18 @@
 <script>
         var oInp1=$("#username");
         var oInp2=$("#password");
-        console.log(oInp1.value);
+        console.log(oInp1,oInp1.val());
         $("#btn").on("click",function(){
             $.ajax({
                 url:"http://localhost:8001/proxy/localhost/php/login.php",
                 type:"GET",
-                data:`username=${oInp1.value}&password=${oInp2.value}`,
+                data:`username=${oInp1.val()}&password=${oInp2.val()}`,
                 datatype:"html",
                 success:function(res){
                     alert(res);
+                    setTimeout(function(){
+                        location.href="jumei_home page.html"
+                    },2000)
                 }
             }) 
         })

@@ -172,6 +172,12 @@ html,body{
     margin-bottom: 28px;
     position: relative;
 }
+#phone .failline input{
+    -webkit-box-shadow: 0 0 4px 1px rgba(228,36,36,.6);
+    box-shadow: 0 0 4px 1px rgba(228,36,36,.6);
+    border-color: #E24A4A;
+    display: block;
+}
 .textbox_ui {
     margin-bottom: 0;
 }
@@ -189,8 +195,9 @@ html,body{
     width: 284px;
 }
 .verityWrap input {
-    width: 126px;
+    width: 156px;
     float: left;
+    margin-right: 26px;
 }
 .verityWrap .phonecode {
     background: #fcfcfc;
@@ -230,4 +237,55 @@ html,body{
     border: 0;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.invalid {
+    display: none;
+    width: 290px;
+    white-space: normal;
+    word-break: normal;
+    height: 1.5em;
+    left: 20px;
+    margin-top: 4px;
+    color: #999;
+    top: 100%;
+    position: absolute;
+    line-height: 1.5;
+}
+.textbox_ui .valid, .textbox_ui .loading, .textbox_ui .invalid i {
+    margin-top: -10px;
+    height: 20px;
+    width: 20px;
+}
+.user input, .pass input, .otherAccout i, .textbox_ui .valid, .textbox_ui .invalid i {
+    background-image: url(../images/sign.png);
+    background-repeat: no-repeat;
+}
+.textbox_ui .invalid i {
+    background-position: 0 -100px;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+}
+.signok .valid, .signok .loading, .loginBord .valid, .loginBord .loading {
+    margin-left: -25px;
+}
+.textbox_ui .valid {
+    display: none;
+    background-position: 0 -125px;
+}
+.textbox_ui .valid, .textbox_ui .loading, .textbox_ui .invalid i {
+    margin-top: -10px;
+    height: 20px;
+    width: 20px;
+}
+.textbox_ui .valid, .textbox_ui .loading {
+    margin-top: -.75em;
+    margin-left: 10px;
+    top: 50%;
+    right:14px;
+}
+.textbox_ui .valid, .textbox_ui .invalid, .textbox_ui .loading, .textbox_ui .focus_text {
+    position: absolute;
+    line-height: 1.5;
+    display: none;
 }
