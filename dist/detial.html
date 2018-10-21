@@ -457,11 +457,8 @@
                 var oTitle = document.getElementById("title");
                 var otImg = document.querySelector("#my");
                 var oBimg = document.querySelector("#product_Bimg");
-                //console.log(otImg)
-                // var res = "";
                 if(cookie("goodsId")){
                     res=cookie("goodsId");//去cookie的velue值
-                    // console.log(cookie("goodsId"));
                     oImg.src =json[res].show.img;
                     otImg.src =json[res].show.img;
                     oBimg.src =json[res].show.img;

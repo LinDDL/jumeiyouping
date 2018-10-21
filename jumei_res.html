@@ -27,13 +27,13 @@
             </div>
             <div class="reg_box">
                 <div class="title">
-                    <div class="toresigter">已有聚美账号？<a href="">在此登录</a></div>
+                    <div class="toresigter">已有聚美账号？<a href="http://localhost:8001/jumei_login.html">在此登录</a></div>
                     <h1><strong>用户注册</strong></h1>
                 </div>
                 <form id="phone" method="post">
                     <div class="line">
                         <div class="textbox_ui">
-                            <input type="text" id="mobile" placeholder="手机号">
+                            <input type="text" id="username" placeholder="手机号">
                             <div class="focus_text">请输入11位手机号码</div>
                         </div>
                     </div>
@@ -42,29 +42,29 @@
                             <input type="text" id="mobile_verify" placeholder="短信校验码" >
                             <div class="focus_text">请输入6位短信校验码</div>
                         </div>
-                        <a href="javascript:;" id="getPhoneCode" class="phonecode"><strong>获取短信校验码</strong></a>
+                        <a href="javascript:void(0);" id="getPhoneCode" class="phonecode"><strong>获取短信校验码</strong></a>
                     </div>
                     <div class="line">
                         <div class="textbox_ui">
-                            <input type="password" placeholder="密码" id="password" autocomplete="off">
+                            <input type="password" placeholder="密码" id="password">
                             <div class="focus_text">
                                 <p class="default">6-16个字符，建议使用字母加数字或符号组合</p>
                             </div>
                         </div>
                     </div>
+                   
                     <div class="line">
                         <div class="textbox_ui">
-                            <input type="password" id="password2" placeholder="重复密码" autocomplete="off">
+                            <input type="password" id="password2" placeholder="重复密码">
                             <div class="focus_text">请再次输入密码</div>
-                            
                         </div>
                     </div>
                     <div class="act" style="margin-left: 0px;">
                         <p>
-                            <input type="submit" class="submit_btn" value="同意协议并注册" name="mobileCommit" style="width: 100%;">
+                            <input type="button" id="btn" class="submit_btn" value="同意协议并注册" name="mobileCommit" style="width: 100%;">
                         </p>
                         <p>
-                            <a href="http://www.jumei.com/help/user_terms" rel="nofollow" target="_blank" style="color:#ed145b;">《聚美优品用户协议》</a>
+                            <a href="javascript:void(0)" rel="nofollow" target="_blank" style="color:#ed145b;">《聚美优品用户协议》</a>
                         </p>
                     </div>
                     <br>
@@ -94,7 +94,19 @@
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<!-- <script src="script/jumei_login_more.js"></script> -->
-<script src="script/jumei_login_success.js"></script>
-<!-- <script src="script/jumei_login_focus.js"></script> -->
-<script src="script/login.js"></script>
+<script>
+    var oBtn = document.getElementById("btn");
+    var oUser = document.getElementById("username");
+    var oPwd = document.getElementById("password");
+    $("#btn").on("click",function(){console.log(oUser.value,oPwd.value)
+        $.ajax({
+            url:"http://localhost:8001/proxy/localhost/php/res.php",
+            type:"GET",
+            data:`username=${oUser.value}&password=${oPwd.value}`,
+            datatype:"html",
+            success:function(res){
+                alert(res);
+            }
+        }) 
+    })
+</script>

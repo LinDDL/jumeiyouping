@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆</title>
+</head>
+<body>
+    <h2>登陆</h2>
+    <p> 账号: <input type="text" id="username"> </p>
+    <p> 密码: <input type="password" id="password"> </p>
+    <p> <button id="login">登陆</button> </p>
+
+    <script src="../ajax.js"></script>
+    <script>
+        var oBtn = document.getElementById("login");
+        var oUser = document.getElementById("username");
+        var oPwd = document.getElementById("password");
+        oBtn.onclick = function(){
+            var url = "http://localhost:8080/1815phpnow/0921/php/login.php";
+            ajaxPost(url,`username=${oUser.value}&password=${oPwd.value}`)
+            .then(function(res){
+                console.log(res);
+            })
+        }
+
+    </script>
+</body>
+</html>

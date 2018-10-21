@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+</head>
+<body>
+    <h2>注册</h2>
+    <p> 账号: <input type="text" id="username"> </p>
+    <p> 密码: <input type="password" id="password"> </p>
+    <p> <button id="register">注册</button> </p>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        var oBtn = document.getElementById("register");
+        var oUser = document.getElementById("username");
+        var oPwd = document.getElementById("password");
+        // oBtn.onclick=function(){
+        //     $.ajax({
+        //         url:"http://localhost:8001/proxy/localhost/php/res.php",
+        //         type:"GET",
+        //         data:`username=${oUser.value}&password=${oPwd.value}`,
+        //         datatype:"html",
+        //         success:function(res){
+        //             alert(res);
+                    
+        //         }
+        //     }) 
+        // }
+        $("#register").on("click",function(){console.log(oUser.value,oPwd.value)
+            $.ajax({
+                url:"http://localhost:8001/proxy/localhost/php/res.php",
+                type:"GET",
+                data:`username=${oUser.value}&password=${oPwd.value}`,
+                datatype:"html",
+                success:function(res){
+                    alert(res);
+                    
+                }
+            }) 
+        })
+    </script>
+</body>
+</html>
